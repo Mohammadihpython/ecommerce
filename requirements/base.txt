@@ -1,0 +1,10 @@
+
+# Django
+django==4.2.7
+django-environ==0.11.2
+
+# Django REST Framework
+djangorestframework==3.14.0
+django-cors-headers==4.3.0
+# DRF-spectacular for api documentation
+drf-spectacular==0.26.5  # https://github.com/tfranzel/drf-spectacular
