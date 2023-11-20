@@ -4,9 +4,11 @@ django==4.2.7
 django-environ==0.11.2
 
 # third party libraries
-redis==5.0.1
+django-redis==5.4.0
+
 # Django REST Framework
 djangorestframework==3.14.0
 django-cors-headers==4.3.0
+djangorestframework_simplejwt==5.3.0
 # DRF-spectacular for api documentation
 drf-spectacular==0.26.5  # https://github.com/tfranzel/drf-spectacular

@@ -1,4 +1,5 @@
 
+from django.core.validators import RegexValidator
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser,PermissionsMixin,AbstractUser
 from django.utils import timezone
@@ -8,10 +9,14 @@ from .managers import UserManager
 
 
 class User(AbstractBaseUser,PermissionsMixin):
+    phone_regex = RegexValidator(
+        regex=r"^989\d{2}\s*?\d{3}\s*?\d{4}$", message=_("Invalid phone number."),
+    )
     phone_number = models.CharField(
         verbose_name = _("شماره تلفن"),
         max_length=14,
         unique=True,
+        validators=[phone_regex],
         error_messages = {
             'unique': _("کاربر با این شماره وجود دارد"),
         }
@@ -28,10 +33,10 @@ class User(AbstractBaseUser,PermissionsMixin):
         null = True,
         blank = True,
     )
-    phone_verified = models.BooleanField(
-        _("شماره تماس تایید شده؟"),
-        default=False
-        )
+    two_step_password = models.BooleanField(
+        default=False, help_text=_("is active two step password?"),
+        verbose_name=_("two step password"),
+    )
     is_staff = models.BooleanField(
         _("وضعیت کارکنان"),
         default=False,
@@ -47,7 +52,7 @@ class User(AbstractBaseUser,PermissionsMixin):
     date_joined = models.DateTimeField(_("date joined"), default=timezone.now)
 
     USERNAME_FIELD = 'phone_number'
-    REQUIRED_FIELDS = ['phone_number',]
+    REQUIRED_FIELDS = []
     objects = UserManager()
 
     def __str__(self):
