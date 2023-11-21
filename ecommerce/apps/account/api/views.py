@@ -98,45 +98,6 @@ class UserProfileView(RetrieveUpdateAPIView):
         return self.request.user
 
 
-# class LoginView(APIView):
-#     """
-#     post:
-#         Send mobile number for Login.
-
-#         parameters: [phone,]
-#     """
-
-#     permission_classes = [
-#         AllowAny,
-#     ]
-#     throttle_scope = "authentication"
-#     throttle_classes = [
-#         ScopedRateThrottle,
-#     ]
-
-#     def post(self, request):
-#         serializer = AuthenticationSerializer(data=request.data)
-#         if not serializer.is_valid():
-#             return Response(
-#                 serializer.errors,
-#                 status=status.HTTP_400_BAD_REQUEST,
-#             )
-#         received_phone = serializer.data.get("phone") # type: ignore
-
-#         user_is_exists: bool = get_user_model().objects.filter(phone_number=received_phone).values("phone_number").exists()
-#         if not user_is_exists:
-#             return Response(
-#                 {
-#                     "No User exists.": "Please enter another phone number.",
-#                 },
-#                 status=status.HTTP_401_UNAUTHORIZED,
-#             )
-
-#         # The otp code is sent to the user's phone number for authentication
-#         return send_otp(
-#             request,
-#             phone=received_phone,
-#         )
 
 
 
