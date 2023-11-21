@@ -24,7 +24,7 @@ from django.core.exceptions import ValidationError
 from django.shortcuts import get_object_or_404
 from django.contrib.auth import get_user_model
 from rest_framework import status
-from utils.OTP import send_otp,get_client_ip
+from ...utils.OTP import send_otp,get_client_ip
 # from management.authentication import JWTAuthentication
 class UsersListView(ListAPIView):
     """
@@ -40,9 +40,8 @@ class UsersListView(ListAPIView):
 
     def get_queryset(self):
         return get_user_model().objects.values(
-            "id", "phone",
+            "id", "phone_number",
             "first_name", "last_name",
-            "author",
         )
 
 class UsersDetailUpdateDeleteView(RetrieveUpdateDestroyAPIView):
@@ -123,7 +122,7 @@ class LoginView(APIView):
             )
         received_phone = serializer.data.get("phone") # type: ignore
 
-        user_is_exists: bool = get_user_model().objects.filter(phone=received_phone).values("phone").exists()
+        user_is_exists: bool = get_user_model().objects.filter(phone_number=received_phone).values("phone_number").exists()
         if not user_is_exists:
             return Response(
                 {
@@ -164,7 +163,7 @@ class RegisterView(APIView):
             )
         received_phone = serializer.data.get("phone") # type: ignore
 
-        user_is_exists: bool = get_user_model().objects.filter(phone=received_phone).values("phone").exists()
+        user_is_exists: bool = get_user_model().objects.filter(phone_number=received_phone).values("phone_number").exists()
         if user_is_exists:
             return Response(
                 {
@@ -227,7 +226,7 @@ class VerifyOtpView(APIView):
 
 
     def _check_otp(self, phone, ip):
-        user, created = get_user_model().objects.get_or_create(phone=phone)
+        user, created = get_user_model().objects.get_or_create(phone_number=phone)
         if user.two_step_password: # type: ignore
             cache.set(f"{ip}-for-two-step-password", user, 250)
             return Response(

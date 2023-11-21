@@ -25,7 +25,7 @@ def send_otp(request, phone):
 
     # TODO Here the otp code must later be sent to the user's phone number by SMS system.
     # But in debug mode we return the otp code.
-
+   
     context = {
         "otp": f"{otp}",
     }
