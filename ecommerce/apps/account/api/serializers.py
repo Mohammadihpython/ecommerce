@@ -13,8 +13,8 @@ class UsersListSerializer(serializers.ModelSerializer):
     class Meta:
         model = get_user_model()
         fields = [
-            "id", "phone",
-            "first_name", "last_name","data_joined"
+            "id", "phone_number",
+            "first_name", "last_name","date_joined"
         ]
 
 
@@ -32,7 +32,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = get_user_model()
         fields = [
-            "id", "phone",
+            "id", "phone_number",
             "first_name", "last_name",
             "two_step_password",
         ]

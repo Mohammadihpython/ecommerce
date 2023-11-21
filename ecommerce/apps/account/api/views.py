@@ -10,6 +10,7 @@ from .serializers import (
     GetTwoStepPasswordSerializer,
     UsersListSerializer,
 )
+from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated, AllowAny,IsAdminUser
 from rest_framework.throttling import ScopedRateThrottle
 from rest_framework.response import Response
@@ -97,7 +98,49 @@ class UserProfileView(RetrieveUpdateAPIView):
         return self.request.user
 
 
-class LoginView(APIView):
+# class LoginView(APIView):
+#     """
+#     post:
+#         Send mobile number for Login.
+
+#         parameters: [phone,]
+#     """
+
+#     permission_classes = [
+#         AllowAny,
+#     ]
+#     throttle_scope = "authentication"
+#     throttle_classes = [
+#         ScopedRateThrottle,
+#     ]
+
+#     def post(self, request):
+#         serializer = AuthenticationSerializer(data=request.data)
+#         if not serializer.is_valid():
+#             return Response(
+#                 serializer.errors,
+#                 status=status.HTTP_400_BAD_REQUEST,
+#             )
+#         received_phone = serializer.data.get("phone") # type: ignore
+
+#         user_is_exists: bool = get_user_model().objects.filter(phone_number=received_phone).values("phone_number").exists()
+#         if not user_is_exists:
+#             return Response(
+#                 {
+#                     "No User exists.": "Please enter another phone number.",
+#                 },
+#                 status=status.HTTP_401_UNAUTHORIZED,
+#             )
+
+#         # The otp code is sent to the user's phone number for authentication
+#         return send_otp(
+#             request,
+#             phone=received_phone,
+#         )
+
+
+
+class LoginView(generics.GenericAPIView):
     """
     post:
         Send mobile number for Login.
@@ -113,32 +156,31 @@ class LoginView(APIView):
         ScopedRateThrottle,
     ]
 
-    def post(self, request):
-        serializer = AuthenticationSerializer(data=request.data)
-        if not serializer.is_valid():
-            return Response(
-                serializer.errors,
-                status=status.HTTP_400_BAD_REQUEST,
-            )
-        received_phone = serializer.data.get("phone") # type: ignore
+    serializer_class = AuthenticationSerializer
 
-        user_is_exists: bool = get_user_model().objects.filter(phone_number=received_phone).values("phone_number").exists()
-        if not user_is_exists:
+    def post(self, request):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        received_phone = serializer.validated_data.get("phone")
+
+        if (
+            user_is_exists := get_user_model()
+            .objects.filter(phone_number=received_phone)
+            .values("phone_number")
+            .exists()
+        ):
+            return send_otp(
+                request,
+                phone=received_phone,
+            )
+        else:
             return Response(
                 {
                     "No User exists.": "Please enter another phone number.",
                 },
                 status=status.HTTP_401_UNAUTHORIZED,
             )
-
-        # The otp code is sent to the user's phone number for authentication
-        return send_otp(
-            request,
-            phone=received_phone,
-        )
-
-
-class RegisterView(APIView):
+class RegisterView(generics.GenericAPIView):
     """
     post:
         Send mobile number for Register.
@@ -153,9 +195,9 @@ class RegisterView(APIView):
     throttle_classes = [
         ScopedRateThrottle,
     ]
-
+    serializer_class = AuthenticationSerializer
     def post(self, request):
-        serializer = AuthenticationSerializer(data=request.data)
+        serializer = self.get_serializer(data=request.data)
         if not serializer.is_valid():
             return Response(
                 serializer.errors,
@@ -177,7 +219,7 @@ class RegisterView(APIView):
             request,
             phone=received_phone,
         )
-class VerifyOtpView(APIView):
+class VerifyOtpView(generics.GenericAPIView):
     """
     post:
         Send otp code to verify mobile number and complete authentication.
@@ -192,9 +234,10 @@ class VerifyOtpView(APIView):
     throttle_classes = [
         ScopedRateThrottle,
     ]
+    serializer_class = OtpSerializer
 
     def post(self, request):
-        serializer = OtpSerializer(data=request.data)
+        serializer = self.get_serializer(data=request.data)
         if not serializer.is_valid():
             return Response(
                 serializer.errors,
@@ -250,7 +293,7 @@ class VerifyOtpView(APIView):
             status=status.HTTP_200_OK,
         )
 
-class VerifyTwoStepPasswordView(APIView):
+class VerifyTwoStepPasswordView(generics.GenericAPIView):
     """
     post:
         Send two-step-password to verify and complete authentication.
@@ -261,9 +304,10 @@ class VerifyTwoStepPasswordView(APIView):
     permission_classes = [
         AllowAny,
     ]
+    serializer_class =GetTwoStepPasswordSerializer
 
     def post(self, request):
-        serializer = GetTwoStepPasswordSerializer(data=request.data)
+        serializer = self.get_serializer(data=request.data)
         if not serializer.is_valid():
             return Response(
                 serializer.errors,
@@ -305,7 +349,7 @@ class VerifyTwoStepPasswordView(APIView):
             status=status.HTTP_200_OK,
         )
 
-class CreateTwoStepPasswordView(APIView):
+class CreateTwoStepPasswordView(generics.GenericAPIView):
     """
     post:
         Send a password to create a two-step-password.
@@ -316,6 +360,7 @@ class CreateTwoStepPasswordView(APIView):
     permission_classes = [
         IsAuthenticated,
     ]
+    serializer_class =GetTwoStepPasswordSerializer
 
     def post(self, request):
         if request.user.two_step_password:
@@ -325,7 +370,7 @@ class CreateTwoStepPasswordView(APIView):
                 },
                 status=status.HTTP_401_UNAUTHORIZED,
             )
-        serializer = GetTwoStepPasswordSerializer(data=request.data)
+        serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         new_password = serializer.data.get("password") # type: ignore
 
@@ -350,7 +395,7 @@ class CreateTwoStepPasswordView(APIView):
             },
             status=status.HTTP_200_OK,
         )
-class ChangeTwoStepPasswordView(APIView):
+class ChangeTwoStepPasswordView(generics.GenericAPIView):
     """
     post:
         Send a password to change a two-step-password.
@@ -361,10 +406,11 @@ class ChangeTwoStepPasswordView(APIView):
     permission_classes = [
         IsAuthenticated,
     ]
+    serializer_class =ChangeTwoStepPasswordSerializer
 
     def post(self, request):
         if request.user.two_step_password:
-            serializer = ChangeTwoStepPasswordSerializer(data=request.data)
+            serializer = self.get_serializer(data=request.data)
             serializer.is_valid(raise_exception=True)
 
             new_password = serializer.data.get("password") # type: ignore
@@ -410,7 +456,7 @@ class ChangeTwoStepPasswordView(APIView):
         )
 
 
-class DeleteAccountView(APIView):
+class DeleteAccountView(generics.GenericAPIView):
     """
     delete:
         Delete an existing User instance.
@@ -419,11 +465,12 @@ class DeleteAccountView(APIView):
     permission_classes = [
         IsAuthenticated,
     ]
+    serializer_class =GetTwoStepPasswordSerializer
 
     def delete(self, request):
         user = get_user_model().objects.get(pk=request.user.pk)
         if request.user.two_step_password:
-            serializer = GetTwoStepPasswordSerializer(data=request.data)
+            serializer = self.get_serializer(data=request.data)
             serializer.is_valid(raise_exception=True)
 
             password = serializer.data.get("password") # type: ignore
