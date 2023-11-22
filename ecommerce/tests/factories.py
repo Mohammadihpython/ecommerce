@@ -7,11 +7,15 @@ from pytest_factoryboy import register
 user = get_user_model()
 fake = Faker('fa_IR')
 
+
+
 @register
 class UserFactory(factory.django.DjangoModelFactory):
+
     class Meta:
         model = user
 
-    phone_number = "09191234567"
-    password = "123456789"
+    phone_number = (
+        phone_number
+    ) = f"989{str(fake.random_int(min=100000000, max=999999999)).zfill(9)}"
 

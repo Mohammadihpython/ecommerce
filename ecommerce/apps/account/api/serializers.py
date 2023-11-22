@@ -1,7 +1,6 @@
-from xml.dom import ValidationErr
+
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
-from django.core.validators import RegexValidator
 
 User = get_user_model()
 
