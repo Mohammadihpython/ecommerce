@@ -53,6 +53,7 @@ class Category(MPTTModel):
         return self.name
 
 
+
 class Product(models.Model):
     """
     Product details table
