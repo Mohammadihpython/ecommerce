@@ -17,8 +17,8 @@ def main():
         ) from exc
     # This allows easy placement of apps within the interior
     # ecommerce directory.
-    current_path = Path(__file__).parent.resolve()
-    sys.path.append(str(current_path / "ecommerce"))
+    # current_path = Path(__file__).parent.resolve()
+    # sys.path.append(str(current_path / "ecommerce"))
 
     execute_from_command_line(sys.argv)
 
