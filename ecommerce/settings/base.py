@@ -70,7 +70,7 @@ ROOT_URLCONF = "ecommerce.urls"
 WSGI_APPLICATION = "ecommerce.wsgi.application"
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#auth-user-model
-AUTH_USER_MODEL = "account.User"
+AUTH_USER_MODEL = "ecommerce.apps.account.User"
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
