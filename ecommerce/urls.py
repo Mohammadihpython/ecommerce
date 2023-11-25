@@ -15,10 +15,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.conf import settings
-from django.views import defaults as default_views
-from django.conf.urls import include
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
+from django.views import defaults as default_views
 from drf_spectacular.views import (SpectacularAPIView, SpectacularRedocView,
                                    SpectacularSwaggerView)
 

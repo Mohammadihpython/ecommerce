@@ -15,13 +15,13 @@ services:
       - postgres
       - redis
     volumes:
-      - .:/app:z 
+      - .:/app:z
     env_file:
       - ./.envs/.local/.django
       - ./.envs/.local/.postgres
     ports:
       - '8000:8000'
-    command: /start 
+    command: /start
 
   postgres:
     build:
@@ -34,7 +34,7 @@ services:
       - ecommerce_local_postgres_data_backups:/backups
     env_file:
       - ./.envs/.local/.postgres
-  
+
   redis:
     image: redis:6
     container_name: ecommerce_local_redis
@@ -65,4 +65,4 @@ services:
     container_name: ecommerce_local_flower
     ports:
       - '5555:5555'
-    command: /start-flower  
+    command: /start-flower

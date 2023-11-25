@@ -15,7 +15,7 @@ def otp_generator(size: int = 6, char: str = digits) -> str:
 def get_client_ip(request) -> str:
     return (
         x_forwarded_for.split(",")[0]
-        if (x_forwarded_for := request.META.get("HTTP_X_FORWARDED_FOR"))
+        if (x_forwarded_for := request.headers.get("x-forwarded-for"))
         else request.META.get("REMOTE_ADDR")
     )
 

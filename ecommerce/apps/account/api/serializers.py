@@ -42,7 +42,7 @@ class AuthenticationSerializer(serializers.Serializer):
     def validate_phone(self, value):
         from re import match
 
-        if not match("^989\d{2}\s*?\d{3}\s*?\d{4}$", value):
+        if not match(r"^989\d{2}\s*?\d{3}\s*?\d{4}$", value):
             raise serializers.ValidationError("Invalid phone number.")
 
         return value

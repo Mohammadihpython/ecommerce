@@ -35,4 +35,3 @@ REDIS_URL=redis://redis:6379/0
 # Flower
 CELERY_FLOWER_USER=hamed
 CELERY_FLOWER_PASSWORD=ahzh6155
-
