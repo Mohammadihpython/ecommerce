@@ -4,14 +4,14 @@ from django.contrib.auth import get_user_model
 from faker import Faker
 from pytest_factoryboy import register
 
-user = get_user_model()
+User = get_user_model()
 fake = Faker("fa_IR")
 
 
 @register
 class UserFactory(factory.django.DjangoModelFactory):
     class Meta:
-        model = user
+        model = User
 
     phone_number = (
         phone_number
