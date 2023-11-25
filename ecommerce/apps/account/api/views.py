@@ -4,8 +4,11 @@ from django.core.cache import cache
 from django.core.exceptions import ValidationError
 from django.shortcuts import get_object_or_404
 from rest_framework import generics, status
-from rest_framework.generics import (ListAPIView, RetrieveUpdateAPIView,
-                                     RetrieveUpdateDestroyAPIView)
+from rest_framework.generics import (
+    ListAPIView,
+    RetrieveUpdateAPIView,
+    RetrieveUpdateDestroyAPIView,
+)
 from rest_framework.permissions import AllowAny, IsAdminUser, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.throttling import ScopedRateThrottle
@@ -13,11 +16,15 @@ from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
 
 from ...utils.OTP import get_client_ip, send_otp
-from .serializers import (AuthenticationSerializer,
-                          ChangeTwoStepPasswordSerializer,
-                          GetTwoStepPasswordSerializer, OtpSerializer,
-                          UserDetailUpdateDeleteSerializer,
-                          UserProfileSerializer, UsersListSerializer)
+from .serializers import (
+    AuthenticationSerializer,
+    ChangeTwoStepPasswordSerializer,
+    GetTwoStepPasswordSerializer,
+    OtpSerializer,
+    UserDetailUpdateDeleteSerializer,
+    UserProfileSerializer,
+    UsersListSerializer,
+)
 
 
 # from management.authentication import JWTAuthentication
@@ -118,7 +125,7 @@ class LoginView(generics.GenericAPIView):
         received_phone = serializer.validated_data.get("phone")
 
         if (
-            user_is_exists := get_user_model()
+            get_user_model()
             .objects.filter(phone_number=received_phone)
             .values("phone_number")
             .exists()

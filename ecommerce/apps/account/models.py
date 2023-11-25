@@ -1,5 +1,4 @@
-from django.contrib.auth.models import (AbstractBaseUser, AbstractUser,
-                                        PermissionsMixin)
+from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
 from django.core.validators import RegexValidator
 from django.db import models
 from django.utils import timezone
@@ -52,7 +51,10 @@ class User(AbstractBaseUser, PermissionsMixin):
         _("فعال"),
         default=True,
         help_text=_(
-            "  مشخص می کند که آیا این کاربر باید به عنوان فعال در نظر گرفته شود .به جای حذف حساب‌ها، این را لغو انتخاب کنید."
+            """
+           مشخص می کند که آیا این کاربر باید به عنوان فعال در نظر گرفته شود
+          .به جای حذف حساب‌ها، این را لغو انتخاب کنید."
+            """
         ),
     )
     date_joined = models.DateTimeField(_("date joined"), default=timezone.now)

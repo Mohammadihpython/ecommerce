@@ -37,7 +37,6 @@ LANGUAGE_CODE = "en-us"
 DJANGO_APPS = [
     "django.contrib.auth",
     "django.contrib.admin",
-
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
@@ -151,7 +150,7 @@ LOGIN_URL = "account_login"
 
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#auth-user-model
-AUTH_USER_MODEL= "account.User"
+AUTH_USER_MODEL = "account.User"
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#fixture-dirs
 FIXTURE_DIRS = (str(APPS_DIR / "fixtures"),)

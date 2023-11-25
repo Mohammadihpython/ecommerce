@@ -1,4 +1,3 @@
-import random
 from secrets import choice as secret_choice
 from string import digits
 

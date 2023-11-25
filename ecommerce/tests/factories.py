@@ -1,5 +1,4 @@
 import factory
-import faker
 from django.contrib.auth import get_user_model
 from faker import Faker
 from pytest_factoryboy import register
