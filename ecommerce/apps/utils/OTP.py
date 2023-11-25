@@ -1,13 +1,16 @@
 import random
-from  string import digits
 from secrets import choice as secret_choice
-from django.core.cache import cache
+from string import digits
+
 from django.conf import settings
+from django.core.cache import cache
 from rest_framework import status
 from rest_framework.response import Response
 
+
 def otp_generator(size: int = 6, char: str = digits) -> str:
     return "".join(secret_choice(char) for _ in range(size))
+
 
 def get_client_ip(request) -> str:
     return (
@@ -25,7 +28,7 @@ def send_otp(request, phone):
 
     # TODO Here the otp code must later be sent to the user's phone number by SMS system.
     # But in debug mode we return the otp code.
-   
+
     context = {
         "otp": f"{otp}",
     }

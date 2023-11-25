@@ -1,20 +1,13 @@
-
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
 
 User = get_user_model()
 
 
-
-
-
 class UsersListSerializer(serializers.ModelSerializer):
     class Meta:
         model = get_user_model()
-        fields = [
-            "id", "phone_number",
-            "first_name", "last_name","date_joined"
-        ]
+        fields = ["id", "phone_number", "first_name", "last_name", "date_joined"]
 
 
 class UserDetailUpdateDeleteSerializer(serializers.ModelSerializer):
@@ -24,6 +17,7 @@ class UserDetailUpdateDeleteSerializer(serializers.ModelSerializer):
             "password",
         ]
 
+
 class UserProfileSerializer(serializers.ModelSerializer):
     phone = serializers.ReadOnlyField()
     two_step_password = serializers.ReadOnlyField()
@@ -31,10 +25,13 @@ class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = get_user_model()
         fields = [
-            "id", "phone_number",
-            "first_name", "last_name",
+            "id",
+            "phone_number",
+            "first_name",
+            "last_name",
             "two_step_password",
         ]
+
 
 class AuthenticationSerializer(serializers.Serializer):
     phone = serializers.CharField(
@@ -50,6 +47,7 @@ class AuthenticationSerializer(serializers.Serializer):
 
         return value
 
+
 class OtpSerializer(serializers.Serializer):
     code = serializers.CharField(
         max_length=6,
@@ -64,10 +62,12 @@ class OtpSerializer(serializers.Serializer):
 
         return value
 
+
 class GetTwoStepPasswordSerializer(serializers.Serializer):
     """
-        Base serializer two-step-password.
+    Base serializer two-step-password.
     """
+
     password = serializers.CharField(
         max_length=20,
     )
@@ -77,13 +77,11 @@ class GetTwoStepPasswordSerializer(serializers.Serializer):
     )
 
     def validate(self, data):
-        password = data.get('password')
-        confirm_password = data.get('confirm_password')
+        password = data.get("password")
+        confirm_password = data.get("confirm_password")
 
         if password != confirm_password:
-            raise serializers.ValidationError(
-                {"Error": "Your passwords didn't match."}
-            )
+            raise serializers.ValidationError({"Error": "Your passwords didn't match."})
 
         return data
 

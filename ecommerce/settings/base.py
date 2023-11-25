@@ -1,16 +1,16 @@
-import environ
 import os
 from pathlib import Path
 
+import environ
 from django.utils.timezone import timedelta
 
-env =environ.Env()
+env = environ.Env()
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-environ.Env.read_env(os.path.join(BASE_DIR,'.env'))
+environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
 
 APPS_DIR = BASE_DIR / "ecommerce"
 # Quick-start development settings - unsuitable for production
@@ -22,7 +22,7 @@ SECRET_KEY = env("DJANGO_SECRET")
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-DEBUG = env.bool("DJANGO_DEBUG", False) # type: ignore
+DEBUG = env.bool("DJANGO_DEBUG", False)  # type: ignore
 
 STATIC_ROOT = str(BASE_DIR / "staticfiles")
 STATIC_URL = "/static/"
@@ -41,21 +41,15 @@ DJANGO_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-
-    #apps
-
-
+    # apps
 ]
 THIRD_PARTY_APPS = [
     # Third party apps
-    'drf_spectacular',
+    "drf_spectacular",
     "django_celery_results",
-
 ]
-LOCAL_APPS =[
+LOCAL_APPS = [
     "ecommerce.apps.account",
-
-
 ]
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
 
@@ -64,8 +58,7 @@ USE_I18N = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#use-tz
 USE_TZ = True
 
-DATABASES = {"default": env.db("DATABASE_URL")}
-DATABASES["default"]["ATOMIC_REQUESTS"] = True
+# DATABASES = {"default": env.db("DATABASE_URL")}
 
 
 # https://docs.djangoproject.com/en/stable/ref/settings/#std:setting-DEFAULT_AUTO_FIELD
@@ -104,12 +97,13 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": env("DB_NAME"),
-        "USER": env('DB_USER'),
-        "PASSWORD": env('DB_PASSWORD'),
-        "HOST": env('DB_HOST'),
-        "PORT": env('DB_PORT'),
+        "USER": env("DB_USER"),
+        "PASSWORD": env("DB_PASSWORD"),
+        "HOST": env("DB_HOST"),
+        "PORT": env("DB_PORT"),
     }
 }
+DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
 TEMPLATES = [
     {
@@ -134,7 +128,6 @@ TEMPLATES = [
         },
     }
 ]
-
 
 
 MIDDLEWARE = [
@@ -212,15 +205,15 @@ CELERY_TASK_SEND_SENT_EVENT = True
 
 
 REST_FRAMEWORK = {
-    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-       'rest_framework_simplejwt.authentication.JWTAuthentication',
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
     ],
-    'DEFAULT_THROTTLE_RATES': {
+    "DEFAULT_THROTTLE_RATES": {
         "authentication": "5/minute",
         "verify_authentication": "5/minute",
     },
-    }
+}
 
 
 SIMPLE_JWT = {
@@ -229,21 +222,18 @@ SIMPLE_JWT = {
     "ROTATE_REFRESH_TOKENS": False,
     "BLACKLIST_AFTER_ROTATION": False,
     "UPDATE_LAST_LOGIN": False,
-
     "ALGORITHM": "HS256",
-
     "AUTH_HEADER_TYPES": ("Bearer",),
     "AUTH_HEADER_NAME": "HTTP_AUTHORIZATION",
-
 }
 
 CACHES = {
-    'default': {
-        'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://127.0.0.1:6379/1',
-        'OPTIONS': {
-            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
-        }
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        },
     }
 }
 

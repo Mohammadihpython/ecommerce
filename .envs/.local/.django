@@ -1,0 +1,15 @@
+
+# General
+# ------------------------------------------------------------------------------
+USE_DOCKER=yes
+DJANGO_SECRET=bVFNcRKNs3ShB4k0JgcrNr3W5qsx8DGa0UTCC8xiQaMNS2ihNZt38mru8PuLsf0a
+# Redis
+# ------------------------------------------------------------------------------
+REDIS_URL=redis://redis:6379/0
+
+# Celery
+# ------------------------------------------------------------------------------
+
+# Flower
+CELERY_FLOWER_USER=Hamed
+CELERY_FLOWER_PASSWORD=ahzh6155

@@ -1,7 +1,6 @@
 from .base import *
 from .base import env
 
-
 DEBUG = True
 
 ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1"]
@@ -27,4 +26,4 @@ if env("USE_DOCKER") == "yes":
 # django-extensions
 # ------------------------------------------------------------------------------
 # https://django-extensions.readthedocs.io/en/latest/installation_instructions.html#configuration
-INSTALLED_APPS += ["django_extensions"]  # noqa: F405
+# INSTALLED_APPS += ["django_extensions"]  # noqa: F405

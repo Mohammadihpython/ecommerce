@@ -1,31 +1,25 @@
-from rest_framework.views import APIView
-from django.core.cache import cache
-from rest_framework_simplejwt.tokens import RefreshToken
-from .serializers import (
-    UserDetailUpdateDeleteSerializer,
-    UserProfileSerializer,
-    AuthenticationSerializer,
-    OtpSerializer,
-    ChangeTwoStepPasswordSerializer,
-    GetTwoStepPasswordSerializer,
-    UsersListSerializer,
-)
-from rest_framework import generics
-from rest_framework.permissions import IsAuthenticated, AllowAny,IsAdminUser
-from rest_framework.throttling import ScopedRateThrottle
-from rest_framework.response import Response
-from rest_framework.views import APIView
-from rest_framework.generics import (
-    ListAPIView,
-    RetrieveUpdateAPIView,
-    RetrieveUpdateDestroyAPIView,
-)
+from django.contrib.auth import get_user_model
 from django.contrib.auth.password_validation import validate_password
+from django.core.cache import cache
 from django.core.exceptions import ValidationError
 from django.shortcuts import get_object_or_404
-from django.contrib.auth import get_user_model
-from rest_framework import status
-from ...utils.OTP import send_otp,get_client_ip
+from rest_framework import generics, status
+from rest_framework.generics import (ListAPIView, RetrieveUpdateAPIView,
+                                     RetrieveUpdateDestroyAPIView)
+from rest_framework.permissions import AllowAny, IsAdminUser, IsAuthenticated
+from rest_framework.response import Response
+from rest_framework.throttling import ScopedRateThrottle
+from rest_framework.views import APIView
+from rest_framework_simplejwt.tokens import RefreshToken
+
+from ...utils.OTP import get_client_ip, send_otp
+from .serializers import (AuthenticationSerializer,
+                          ChangeTwoStepPasswordSerializer,
+                          GetTwoStepPasswordSerializer, OtpSerializer,
+                          UserDetailUpdateDeleteSerializer,
+                          UserProfileSerializer, UsersListSerializer)
+
+
 # from management.authentication import JWTAuthentication
 class UsersListView(ListAPIView):
     """
@@ -38,12 +32,14 @@ class UsersListView(ListAPIView):
         IsAdminUser,
     ]
 
-
     def get_queryset(self):
         return get_user_model().objects.values(
-            "id", "phone_number",
-            "first_name", "last_name",
+            "id",
+            "phone_number",
+            "first_name",
+            "last_name",
         )
+
 
 class UsersDetailUpdateDeleteView(RetrieveUpdateDestroyAPIView):
     """
@@ -98,9 +94,6 @@ class UserProfileView(RetrieveUpdateAPIView):
         return self.request.user
 
 
-
-
-
 class LoginView(generics.GenericAPIView):
     """
     post:
@@ -141,6 +134,8 @@ class LoginView(generics.GenericAPIView):
                 },
                 status=status.HTTP_401_UNAUTHORIZED,
             )
+
+
 class RegisterView(generics.GenericAPIView):
     """
     post:
@@ -157,6 +152,7 @@ class RegisterView(generics.GenericAPIView):
         ScopedRateThrottle,
     ]
     serializer_class = AuthenticationSerializer
+
     def post(self, request):
         serializer = self.get_serializer(data=request.data)
         if not serializer.is_valid():
@@ -164,9 +160,14 @@ class RegisterView(generics.GenericAPIView):
                 serializer.errors,
                 status=status.HTTP_400_BAD_REQUEST,
             )
-        received_phone = serializer.data.get("phone") # type: ignore
+        received_phone = serializer.data.get("phone")  # type: ignore
 
-        user_is_exists: bool = get_user_model().objects.filter(phone_number=received_phone).values("phone_number").exists()
+        user_is_exists: bool = (
+            get_user_model()
+            .objects.filter(phone_number=received_phone)
+            .values("phone_number")
+            .exists()
+        )
         if user_is_exists:
             return Response(
                 {
@@ -180,6 +181,8 @@ class RegisterView(generics.GenericAPIView):
             request,
             phone=received_phone,
         )
+
+
 class VerifyOtpView(generics.GenericAPIView):
     """
     post:
@@ -204,7 +207,7 @@ class VerifyOtpView(generics.GenericAPIView):
                 serializer.errors,
                 status=status.HTTP_400_BAD_REQUEST,
             )
-        received_code = serializer.data.get("code") # type: ignore
+        received_code = serializer.data.get("code")  # type: ignore
         ip = get_client_ip(request)
         phone = cache.get(f"{ip}-for-authentication")
         otp = cache.get(phone)
@@ -228,10 +231,9 @@ class VerifyOtpView(generics.GenericAPIView):
                 status=status.HTTP_408_REQUEST_TIMEOUT,
             )
 
-
     def _check_otp(self, phone, ip):
         user, created = get_user_model().objects.get_or_create(phone_number=phone)
-        if user.two_step_password: # type: ignore
+        if user.two_step_password:  # type: ignore
             cache.set(f"{ip}-for-two-step-password", user, 250)
             return Response(
                 {
@@ -240,19 +242,20 @@ class VerifyOtpView(generics.GenericAPIView):
                 status=status.HTTP_200_OK,
             )
 
-        refresh =RefreshToken.for_user(user)
+        refresh = RefreshToken.for_user(user)
         cache.delete(phone)
         cache.delete(f"{ip}-for-authentication")
 
         context = {
             "created": created,
             "refresh": str(refresh),
-            "access": str(refresh.access_token) # type: ignore
+            "access": str(refresh.access_token),  # type: ignore
         }
         return Response(
             context,
             status=status.HTTP_200_OK,
         )
+
 
 class VerifyTwoStepPasswordView(generics.GenericAPIView):
     """
@@ -265,7 +268,7 @@ class VerifyTwoStepPasswordView(generics.GenericAPIView):
     permission_classes = [
         AllowAny,
     ]
-    serializer_class =GetTwoStepPasswordSerializer
+    serializer_class = GetTwoStepPasswordSerializer
 
     def post(self, request):
         serializer = self.get_serializer(data=request.data)
@@ -286,7 +289,6 @@ class VerifyTwoStepPasswordView(generics.GenericAPIView):
             status=status.HTTP_408_REQUEST_TIMEOUT,
         )
 
-
     def _check_two_password(self, serializer, user, ip):
         password = serializer.data.get("password")
         check_password: bool = user.check_password(password)
@@ -298,17 +300,18 @@ class VerifyTwoStepPasswordView(generics.GenericAPIView):
                 },
                 status=status.HTTP_406_NOT_ACCEPTABLE,
             )
-        refresh =RefreshToken.for_user(user)
+        refresh = RefreshToken.for_user(user)
         cache.delete(f"{ip}-for-two-step-password")
 
         context = {
             "refresh": str(refresh),
-            "access": str(refresh.access_token) # type: ignore
+            "access": str(refresh.access_token),  # type: ignore
         }
         return Response(
             context,
             status=status.HTTP_200_OK,
         )
+
 
 class CreateTwoStepPasswordView(generics.GenericAPIView):
     """
@@ -321,25 +324,25 @@ class CreateTwoStepPasswordView(generics.GenericAPIView):
     permission_classes = [
         IsAuthenticated,
     ]
-    serializer_class =GetTwoStepPasswordSerializer
+    serializer_class = GetTwoStepPasswordSerializer
 
     def post(self, request):
         if request.user.two_step_password:
             return Response(
                 {
-                    "Error!":"Your request could not be approved.",
+                    "Error!": "Your request could not be approved.",
                 },
                 status=status.HTTP_401_UNAUTHORIZED,
             )
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        new_password = serializer.data.get("password") # type: ignore
+        new_password = serializer.data.get("password")  # type: ignore
 
         try:
-            _: None = validate_password(new_password) # type: ignore
+            _: None = validate_password(new_password)  # type: ignore
         except ValidationError as err:
             return Response(
-                {"errors":err},
+                {"errors": err},
                 status=status.HTTP_401_UNAUTHORIZED,
             )
 
@@ -348,14 +351,16 @@ class CreateTwoStepPasswordView(generics.GenericAPIView):
             pk=request.user.pk,
         )
         user.set_password(new_password)
-        user.two_step_password = True # type: ignore
+        user.two_step_password = True  # type: ignore
         user.save(update_fields=["password", "two_step_password"])
         return Response(
             {
-                "Successful.":"Your password was changed successfully.",
+                "Successful.": "Your password was changed successfully.",
             },
             status=status.HTTP_200_OK,
         )
+
+
 class ChangeTwoStepPasswordView(generics.GenericAPIView):
     """
     post:
@@ -367,29 +372,29 @@ class ChangeTwoStepPasswordView(generics.GenericAPIView):
     permission_classes = [
         IsAuthenticated,
     ]
-    serializer_class =ChangeTwoStepPasswordSerializer
+    serializer_class = ChangeTwoStepPasswordSerializer
 
     def post(self, request):
         if request.user.two_step_password:
             serializer = self.get_serializer(data=request.data)
             serializer.is_valid(raise_exception=True)
 
-            new_password = serializer.data.get("password") # type: ignore
+            new_password = serializer.data.get("password")  # type: ignore
 
             try:
-                _: None = validate_password(new_password) # type: ignore
+                _: None = validate_password(new_password)  # type: ignore
             except ValidationError as err:
                 return Response(
-                    {"errors":err},
+                    {"errors": err},
                     status=status.HTTP_401_UNAUTHORIZED,
                 )
 
-            old_password = serializer.data.get("old_password") # type: ignore
+            old_password = serializer.data.get("old_password")  # type: ignore
             user = get_object_or_404(
                 get_user_model(),
                 pk=request.user.pk,
             )
-            check_password: bool = user.check_password(old_password) # type: ignore
+            check_password: bool = user.check_password(old_password)  # type: ignore
 
             if check_password:
                 user.set_password(new_password)
@@ -397,21 +402,21 @@ class ChangeTwoStepPasswordView(generics.GenericAPIView):
 
                 return Response(
                     {
-                        "Successful.":"Your password was changed successfully.",
+                        "Successful.": "Your password was changed successfully.",
                     },
                     status=status.HTTP_200_OK,
                 )
             else:
                 return Response(
                     {
-                        "Error!":"The password entered is incorrect.",
+                        "Error!": "The password entered is incorrect.",
                     },
                     status=status.HTTP_406_NOT_ACCEPTABLE,
                 )
 
         return Response(
             {
-                "Error!":"Your request could not be approved.",
+                "Error!": "Your request could not be approved.",
             },
             status=status.HTTP_401_UNAUTHORIZED,
         )
@@ -426,7 +431,7 @@ class DeleteAccountView(generics.GenericAPIView):
     permission_classes = [
         IsAuthenticated,
     ]
-    serializer_class =GetTwoStepPasswordSerializer
+    serializer_class = GetTwoStepPasswordSerializer
 
     def delete(self, request):
         user = get_user_model().objects.get(pk=request.user.pk)
@@ -434,8 +439,8 @@ class DeleteAccountView(generics.GenericAPIView):
             serializer = self.get_serializer(data=request.data)
             serializer.is_valid(raise_exception=True)
 
-            password = serializer.data.get("password") # type: ignore
-            check_password: bool = user.check_password(password) # type: ignore
+            password = serializer.data.get("password")  # type: ignore
+            check_password: bool = user.check_password(password)  # type: ignore
 
             if not check_password:
                 return Response(
@@ -456,19 +461,15 @@ class DeleteAccountView(generics.GenericAPIView):
 class LogoutView(APIView):
     permission_classes = [IsAuthenticated]
 
-    def post(self,request):
-        refresh_token = request.data['refresh']
-        access_token = request.data['access']
+    def post(self, request):
+        refresh_token = request.data["refresh"]
+        access_token = request.data["access"]
         try:
-
             token = RefreshToken(refresh_token)
             token.blacklist()
-            return Response("کابر با موفقیت از حساب کاربری خارج شد", status=status.HTTP_200_OK)
+            return Response(
+                "کابر با موفقیت از حساب کاربری خارج شد", status=status.HTTP_200_OK
+            )
         except Exception:
             refresh_token = access_token
             return Response({"msg : invalid token"}, status=status.HTTP_400_BAD_REQUEST)
-
-
-
-
-

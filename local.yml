@@ -30,8 +30,8 @@ services:
     image: ecommerce_production_postgres
     container_name: ecommerce_local_postgres
     volumes:
-      - delivery_system_local_postgres_data:/var/lib/postgresql/data
-      - delivery_system_local_postgres_data_backups:/backups
+      - ecommerce_local_postgres_data:/var/lib/postgresql/data
+      - ecommerce_local_postgres_data_backups:/backups
     env_file:
       - ./.envs/.local/.postgres
   

@@ -22,10 +22,7 @@ class Category(MPTTModel):
         unique=False,
         blank=False,
         verbose_name=_("category safe URL"),
-        help_text=_(
-            "format: required, letters, numbers, underscore, or hyphens"
-        ),
-
+        help_text=_("format: required, letters, numbers, underscore, or hyphens"),
     )
     is_active = models.BooleanField(
         default=True,
@@ -53,7 +50,6 @@ class Category(MPTTModel):
         return self.name
 
 
-
 class Product(models.Model):
     """
     Product details table
@@ -73,9 +69,7 @@ class Product(models.Model):
         null=False,
         blank=False,
         verbose_name=_("product safe URL"),
-        help_text=_(
-            "format: required, letters, numbers, underscores or hyphens"
-        ),
+        help_text=_("format: required, letters, numbers, underscores or hyphens"),
     )
     name = models.CharField(
         max_length=255,
@@ -117,6 +111,7 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
+
 class ProductAttribute(models.Model):
     """
     Product attribute table
@@ -140,6 +135,7 @@ class ProductAttribute(models.Model):
 
     def __str__(self):
         return self.name
+
 
 class ProductType(models.Model):
     """
@@ -177,7 +173,6 @@ class Brand(models.Model):
         verbose_name=_("brand name"),
         help_text=_("format: required, unique, max-255"),
     )
-
 
 
 class ProductAttributeValue(models.Model):
@@ -230,9 +225,7 @@ class ProductInventory(models.Model):
     product = models.ForeignKey(
         Product, related_name="product", on_delete=models.PROTECT
     )
-    brand = models.ForeignKey(
-        Brand, related_name="brand", on_delete=models.PROTECT
-    )
+    brand = models.ForeignKey(Brand, related_name="brand", on_delete=models.PROTECT)
     attribute_values = models.ManyToManyField(
         ProductAttributeValue,
         related_name="product_attribute_values",
@@ -409,7 +402,6 @@ class ProductAttributeValues(models.Model):
         ProductInventory,
         related_name="productattributevaluess",
         on_delete=models.PROTECT,
-
     )
 
     class Meta:
