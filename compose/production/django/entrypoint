@@ -20,7 +20,7 @@ python << END
 import sys
 import time
 
-import psycopg
+import psycopg2 as psycopg
 
 suggest_unrecoverable_after = 30
 start = time.time()
