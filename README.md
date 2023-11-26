@@ -1,5 +1,6 @@
 [![Django CI](https://github.com/Mohammadihpython/ecommerce/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Mohammadihpython/ecommerce/actions/workflows/ci-cd.yml) ![Coverage](https://img.shields.io/badge/coverage-96%25-brightgreen)
 # Ecommerce
+A Django Shop API with Elastic Search
 ## Table of Contents
 - [About](#about)
 - [Features](#features)
