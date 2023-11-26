@@ -50,18 +50,17 @@ jobs:
       - name: Run Django Tests
         run: |
           docker compose -f local.yml run django pytest
-          docker compose -f local.yml run django coverage report -m
+
       - name: Generate Coverage Badge URL
         id: coverage-badge
         run: |
-            COVERAGE_PERCENTAGE=$(docker compose -f local.yml run django coverage report -m | awk 'END {print $NF}')
-            echo "::set-output name=coverage_percentage::$COVERAGE_PERCENTAGE"
-
-      - name: Update README with Coverage Badge
-        if: success()
-        run: |
-          COVERAGE_PERCENTAGE="${{ steps.coverage-badge.outputs.coverage_percentage }}"
-          sed -i "s|!\[Coverage\].*|![Coverage](https://img.shields.io/badge/coverage-${COVERAGE_PERCENTAGE}%25-brightgreen)|g" README.md
-
+          COVERAGE_REPORT=$(docker compose -f local.yml run django pytest --cov)
+          COVERAGE_PERCENTAGE=$(echo "$COVERAGE_REPORT" | awk '/TOTAL/{print substr($NF, 1, length($NF)-1)}')
+          if [[ "$COVERAGE_REPORT" != *"No data to report."* ]]; then
+            echo "Coverage Percentage: $COVERAGE_PERCENTAGE"
+            sed -i "s|!\[Coverage\].*|![Coverage](https://img.shields.io/badge/coverage-${COVERAGE_PERCENTAGE}%25-brightgreen)|g" README.md
+          else
+            echo "Failed to retrieve coverage percentage."
+          fi
       - name: Tear down the Stack
         run: docker compose -f local.yml down
