@@ -54,7 +54,7 @@ jobs:
       - name: Generate Coverage Badge URL
         id: coverage-badge
         run: |
-            COVERAGE_PERCENTAGE=$(docker compose -f local.yml run django coverage report | grep -Eo "[0-9]+\.[0-9]+" | head -n 1)
+            COVERAGE_PERCENTAGE=$(docker compose -f local.yml run django coverage report -m | awk 'END {print $NF}')
             echo "::set-output name=coverage_percentage::$COVERAGE_PERCENTAGE"
 
       - name: Update README with Coverage Badge
