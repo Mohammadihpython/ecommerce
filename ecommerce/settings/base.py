@@ -28,7 +28,7 @@ STATIC_ROOT = str(BASE_DIR / "staticfiles")
 STATIC_URL = "/static/"
 
 
-STATICFILES_DIRS = [str(APPS_DIR / "static")]
+STATICFILES_DIRS = [str(APPS_DIR / "staticfiles")]
 
 TIME_ZONE = "UTC"
 LANGUAGE_CODE = "en-us"
