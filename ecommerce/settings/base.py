@@ -24,7 +24,7 @@ SECRET_KEY = env("DJANGO_SECRET")
 
 DEBUG = env.bool("DJANGO_DEBUG", False)  # type: ignore
 
-STATIC_ROOT = str(BASE_DIR / "staticfiles")
+STATIC_ROOT = str(APPS_DIR / "staticfiles")
 STATIC_URL = "/static/"
 
 
