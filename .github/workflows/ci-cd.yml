@@ -48,7 +48,20 @@ jobs:
         run: docker compose -f local.yml run --rm django python manage.py migrate
 
       - name: Run Django Tests
-        run: docker compose -f local.yml run django pytest
+        run: |
+          docker compose -f local.yml run django pytest
+          docker compose -f local.yml run django coverage report -m
+      - name: Generate Coverage Badge URL
+        id: coverage-badge
+        run: |
+            COVERAGE_PERCENTAGE=$(docker compose -f local.yml run django coverage report | grep -Eo "[0-9]+\.[0-9]+" | head -n 1)
+            echo "::set-output name=coverage_percentage::$COVERAGE_PERCENTAGE"
+
+      - name: Update README with Coverage Badge
+        if: success()
+        run: |
+          COVERAGE_PERCENTAGE="${{ steps.coverage-badge.outputs.coverage_percentage }}"
+          sed -i "s|!\[Coverage\].*|![Coverage](https://img.shields.io/badge/coverage-${COVERAGE_PERCENTAGE}%25-brightgreen)|g" README.md
 
       - name: Tear down the Stack
         run: docker compose -f local.yml down

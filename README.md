@@ -1,4 +1,4 @@
-[![Django CI](https://github.com/Mohammadihpython/ecommerce/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Mohammadihpython/ecommerce/actions/workflows/ci-cd.yml)
+[![Django CI](https://github.com/Mohammadihpython/ecommerce/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Mohammadihpython/ecommerce/actions/workflows/ci-cd.yml) [![Coverage](https://img.shields.io/badge/coverage-<COVERAGE_PERCENTAGE>%25-brightgreen)](<YOUR_COVERAGE_REPORT_URL>)
 # Ecommerce
 ## Table of Contents
 - [About](#about)
