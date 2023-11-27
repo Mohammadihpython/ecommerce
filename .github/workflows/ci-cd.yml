@@ -57,7 +57,6 @@ jobs:
           COVERAGE_REPORT=$(docker compose -f local.yml run django pytest --cov)
           COVERAGE_PERCENTAGE=$(echo "$COVERAGE_REPORT" | awk '/TOTAL/{print substr($NF, 1, length($NF)-1)}')
           if [[ "$COVERAGE_REPORT" != *"No data to report."* ]]; then
-            echo "Coverage Percentage: $COVERAGE_PERCENTAGE"
             sed -i "s|!\[Coverage\].*|![Coverage](https://img.shields.io/badge/coverage-${COVERAGE_PERCENTAGE}%25-brightgreen)|g" README.md
           else
             echo "Failed to retrieve coverage percentage."
