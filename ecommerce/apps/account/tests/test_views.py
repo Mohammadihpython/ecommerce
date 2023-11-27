@@ -113,7 +113,7 @@ def test_verify_otp_view_with_redis_cache(user_factory, api_client):
 
 @pytest.mark.django_db
 def test_verify_otp_view_with_mock_cache(api_client, user_factory):
-    with patch("ecommerce.apps.account.api.views.cache") as mocked_cache:
+    with patch("ecommerce.apps.account.endpoints.views.cache") as mocked_cache:
         # Simulate the cache behavior
         user = user_factory.create()
         # Obtain IP dynamically using a dummy request
@@ -140,7 +140,7 @@ def test_verify_otp_view_with_mock_cache(api_client, user_factory):
 
 @pytest.mark.django_db
 def test_verify_otp_view_and_register_user(api_client, user_factory):
-    with patch("ecommerce.apps.account.api.views.cache") as mocked_cache:
+    with patch("ecommerce.apps.account.endpoints.views.cache") as mocked_cache:
         # Simulate the cache behavior
 
         # Obtain IP dynamically using a dummy request

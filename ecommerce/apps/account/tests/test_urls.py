@@ -1,7 +1,7 @@
 import pytest
 from django.urls import resolve, reverse
 
-from ecommerce.apps.account.api import views
+from ecommerce.apps.account.endpoints import views
 
 
 @pytest.mark.django_db
