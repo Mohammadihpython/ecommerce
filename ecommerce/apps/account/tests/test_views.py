@@ -3,6 +3,8 @@ from django.contrib.auth import get_user_model
 from django.urls import reverse
 from rest_framework import status
 from unittest.mock import patch
+import socket
+from django.http import HttpRequest
 
 
 @pytest.mark.django_db
@@ -114,8 +116,14 @@ def test_verify_otp_view_with_mock_cache(api_client, user_factory):
     with patch("ecommerce.apps.account.api.views.cache") as mocked_cache:
         # Simulate the cache behavior
         user = user_factory.create()
+        # Obtain IP dynamically using a dummy request
+        dummy_request = HttpRequest()
+        ip = dummy_request.META["REMOTE_ADDR"] = socket.gethostbyname(
+            socket.gethostname()
+        )
+        print(dummy_request.META["REMOTE_ADDR"])
         mocked_cache.get.side_effect = lambda key: {
-            "127.0.0.1-for-authentication": user.phone_number,
+            f"{ip}-for-authentication": user.phone_number,
             user.phone_number: "123456",
         }.get(key)
 
@@ -124,7 +132,7 @@ def test_verify_otp_view_with_mock_cache(api_client, user_factory):
 
         verify_url = reverse("account:verify")
 
-        response = client.post(verify_url, data=data)
+        response = client.post(verify_url, data=data, HTTP_X_FORWARDED_FOR=ip)
 
         # Validate response
         assert response.status_code == status.HTTP_200_OK
@@ -134,16 +142,26 @@ def test_verify_otp_view_with_mock_cache(api_client, user_factory):
 def test_verify_otp_view_and_register_user(api_client, user_factory):
     with patch("ecommerce.apps.account.api.views.cache") as mocked_cache:
         # Simulate the cache behavior
+
+        # Obtain IP dynamically using a dummy request
+        dummy_request = HttpRequest()
+        ip = dummy_request.META["REMOTE_ADDR"] = socket.gethostbyname(
+            socket.gethostname()
+        )
+
         user = user_factory.build()
         mocked_cache.get.side_effect = lambda key: {
-            "127.0.0.1-for-authentication": user.phone_number,
+            f"{ip}-for-authentication": user.phone_number,
             user.phone_number: "123456",
         }.get(key)
         client = api_client
         register_url = reverse("account:register")
 
         register_response = client.post(
-            register_url, data={"phone_number": user.phone_number}, format="json"
+            register_url,
+            data={"phone_number": user.phone_number},
+            HTTP_X_FORWARDED_FOR=ip,
+            format="json",
         )
         assert register_response.status_code == status.HTTP_200_OK
 
@@ -151,6 +169,6 @@ def test_verify_otp_view_and_register_user(api_client, user_factory):
 
         verify_url = reverse("account:verify")
 
-        response = client.post(verify_url, data=data)
+        response = client.post(verify_url, data=data, HTTP_X_FORWARDED_FOR=ip)
         # Validate response
         assert response.status_code == status.HTTP_200_OK
