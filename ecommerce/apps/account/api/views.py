@@ -80,6 +80,18 @@ class UsersDetailUpdateDeleteView(RetrieveUpdateDestroyAPIView):
             pk=pk,
         )
 
+    def update(self, request, *args, **kwargs):
+        instance = self.get_object()
+        serializer = self.get_serializer(instance, data=request.data, partial=True)
+        serializer.is_valid(raise_exception=True)
+
+        # Handle 'phone_number' exclusion if not provided in request data
+        if "phone_number" not in serializer.validated_data:
+            serializer.validated_data.pop("phone_number", None)
+
+        self.perform_update(serializer)
+        return Response(serializer.data)
+
 
 class UserProfileView(RetrieveUpdateAPIView):
     """
@@ -122,7 +134,7 @@ class LoginView(generics.GenericAPIView):
     def post(self, request):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        received_phone = serializer.validated_data.get("phone")
+        received_phone = serializer.validated_data.get("phone_number")
 
         if (
             get_user_model()
@@ -167,7 +179,7 @@ class RegisterView(generics.GenericAPIView):
                 serializer.errors,
                 status=status.HTTP_400_BAD_REQUEST,
             )
-        received_phone = serializer.data.get("phone")  # type: ignore
+        received_phone = serializer.data.get("phone_number")  # type: ignore
 
         user_is_exists: bool = (
             get_user_model()

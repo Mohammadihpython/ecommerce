@@ -12,6 +12,16 @@ class UserFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = User
 
-    phone_number = (
-        phone_number
-    ) = f"989{str(fake.random_int(min=100000000, max=999999999)).zfill(9)}"
+    is_superuser = False
+    is_staff = False
+    phone_number = factory.Sequence(lambda n: f"989{str(n).zfill(9)}")
+
+
+@register
+class UpdateUserFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = User
+
+    first_name = factory.Faker("first_name")
+    last_name = factory.Faker("last_name")
+    phone_number = factory.Sequence(lambda n: f"989{str(n).zfill(9)}")

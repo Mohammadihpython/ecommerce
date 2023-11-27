@@ -5,11 +5,12 @@ from . import views
 app_name = "account"
 
 urlpatterns = [
+    path("profile/", views.UserProfileView.as_view(), name="user-profile"),
     path("", views.UsersListView.as_view(), name="users-list"),
     path("register/", views.RegisterView.as_view(), name="register"),
     path("login/", views.LoginView.as_view(), name="login"),
     path("logout/", views.LogoutView.as_view(), name="logout"),
-    path("verify/", views.VerifyOtpView.as_view(), name="users-list"),
+    path("verify/", views.VerifyOtpView.as_view(), name="verify"),
     path(
         "verify-two=step-password/",
         views.VerifyTwoStepPasswordView.as_view(),
@@ -23,7 +24,7 @@ urlpatterns = [
     path(
         "create-two-step-password/",
         views.CreateTwoStepPasswordView.as_view(),
-        name="change-two-step-password",
+        name="create-two-step-password",
     ),
     path("delete-account/", views.DeleteAccountView.as_view(), name="delete-account"),
     path(

@@ -16,10 +16,14 @@ class UserDetailUpdateDeleteSerializer(serializers.ModelSerializer):
         exclude = [
             "password",
         ]
+        extra_kwargs = {
+            "first_name": {"allow_blank": True},
+            "last_name": {"allow_blank": True},
+        }
 
 
 class UserProfileSerializer(serializers.ModelSerializer):
-    phone = serializers.ReadOnlyField()
+    phone_number = serializers.ReadOnlyField()
     two_step_password = serializers.ReadOnlyField()
 
     class Meta:
@@ -34,12 +38,12 @@ class UserProfileSerializer(serializers.ModelSerializer):
 
 
 class AuthenticationSerializer(serializers.Serializer):
-    phone = serializers.CharField(
+    phone_number = serializers.CharField(
         max_length=12,
         min_length=12,
     )
 
-    def validate_phone(self, value):
+    def validate_phone_number(self, value):
         from re import match
 
         if not match(r"^989\d{2}\s*?\d{3}\s*?\d{4}$", value):

@@ -52,7 +52,7 @@ coverage.xml
 *vscode/
 # # Django stuff:
 # staticfiles/
-
+settings.json
 # Sphinx documentation
 docs/_build/
 
