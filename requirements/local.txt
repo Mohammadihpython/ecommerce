@@ -29,7 +29,7 @@ django-extensions==3.2.3  # https://github.com/django-extensions/django-extensio
 pytest-django==4.7.0  # https://github.com/pytest-dev/pytest-django
 
 
-pydotplus-2.0.2
+pydotplus==2.0.2
 
 # Documentation
 # ------------------------------------------------------------------------------
