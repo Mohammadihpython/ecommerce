@@ -14,3 +14,6 @@ REDIS_HOST=redis
 # Flower
 CELERY_FLOWER_USER=Hamed
 CELERY_FLOWER_PASSWORD=ahzh6155
+
+#elasticsearch
+ELASTIC_HOST= elasticsearch

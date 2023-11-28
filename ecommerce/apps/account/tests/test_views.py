@@ -1,10 +1,11 @@
+import socket
+from unittest.mock import patch
+
 import pytest
 from django.contrib.auth import get_user_model
+from django.http import HttpRequest
 from django.urls import reverse
 from rest_framework import status
-from unittest.mock import patch
-import socket
-from django.http import HttpRequest
 
 
 @pytest.mark.django_db

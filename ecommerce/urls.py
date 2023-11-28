@@ -38,6 +38,10 @@ urlpatterns = [
         "account/",
         include("ecommerce.apps.account.endpoints.urls", namespace="account"),
     ),
+    path(
+        "search/",
+        include("ecommerce.apps.search.urls", namespace="search"),
+    ),
 ]
 
 if settings.DEBUG:

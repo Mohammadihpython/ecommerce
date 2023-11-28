@@ -47,10 +47,12 @@ THIRD_PARTY_APPS = [
     # Third party apps
     "drf_spectacular",
     "django_celery_results",
+    "django_elasticsearch_dsl",
 ]
 LOCAL_APPS = [
     "ecommerce.apps.account",
     "ecommerce.apps.product",
+    "ecommerce.apps.search",
 ]
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
 
@@ -242,3 +244,13 @@ CACHES = {
 }
 
 EXPIRY_TIME_OTP = 300
+
+
+# Elasticsearch
+# https://django-elasticsearch-dsl.readthedocs.io/en/latest/settings.html
+
+ELASTICSEARCH_DSL = {
+    "default": {
+        "hosts": f"http://{env('ELASTIC_HOST')}:9200",
+    }
+}

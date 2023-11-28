@@ -12,8 +12,8 @@ django-celery-beat==2.5.0
 django-celery-results==2.5.1
 celery==5.3.6
 Pillow==10.1.0
-
-
+elasticsearch-dsl==8.11.0
+django-elasticsearch-dsl==8.0
 # Django REST Framework
 djangorestframework==3.14.0
 django-cors-headers==4.3.0
