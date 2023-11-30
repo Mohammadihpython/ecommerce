@@ -251,8 +251,4 @@ EXPIRY_TIME_OTP = 300
 # Elasticsearch
 # https://django-elasticsearch-dsl.readthedocs.io/en/latest/settings.html
 
-ELASTICSEARCH_DSL = {
-    "default": {
-        "hosts": f"http://{env('ELASTIC_HOST')}:9200",
-    }
-}
+ELASTICSEARCH_DSL = {"default": {"hosts": env("ELASTIC_HOST")}}
