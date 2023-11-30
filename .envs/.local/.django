@@ -14,4 +14,4 @@ CELERY_FLOWER_USER=Hamed
 CELERY_FLOWER_PASSWORD=ahzh6155
 
 #elasticsearch
-ELASTIC_HOST=http://localhost:9200
+ELASTIC_HOST=http://0.0.0.0:9200

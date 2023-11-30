@@ -18,11 +18,15 @@ services:
       - elasticsearch
     volumes:
       - .:/app:z
+    links:
+      - elasticsearch:elasticsearch
+
     env_file:
       - ./.envs/.local/.django
       - ./.envs/.local/.postgres
     ports:
       - '8000:8000'
+
     command: /start
 
   postgres:
