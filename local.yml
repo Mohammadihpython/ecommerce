@@ -1,5 +1,12 @@
 version: '3'
 
+networks:
+  ecommerce:
+    driver: bridge
+  ecommerce_elastic:
+    driver: bridge
+
+
 volumes:
   ecommerce_local_postgres_data: {}
   ecommerce_local_postgres_data_backups: {}
@@ -20,7 +27,9 @@ services:
       - .:/app:z
     links:
       - elasticsearch:elasticsearch
-
+    networks:
+      - ecommerce_elastic
+      - ecommerce
     env_file:
       - ./.envs/.local/.django
       - ./.envs/.local/.postgres
@@ -38,6 +47,8 @@ services:
     volumes:
       - ecommerce_local_postgres_data:/var/lib/postgresql/data
       - ecommerce_local_postgres_data_backups:/backups
+    networks:
+      - ecommerce
     env_file:
       - ./.envs/.local/.postgres
 
@@ -53,6 +64,8 @@ services:
       - redis
       - postgres
     ports: []
+    networks:
+      - ecommerce
     command: /start-celeryworker
 
   celerybeat:
@@ -63,6 +76,8 @@ services:
       - redis
       - postgres
     ports: []
+    networks:
+      - ecommerce
     command: /start-celerybeat
 
   flower:
@@ -71,6 +86,8 @@ services:
     container_name: ecommerce_local_flower
     ports:
       - '5555:5555'
+    networks:
+      - ecommerce
     command: /start-flower
 
   elasticsearch:
@@ -84,9 +101,10 @@ services:
       - cluster.routing.allocation.disk.watermark.low=97%
       - cluster.routing.allocation.disk.watermark.high=98%
       - cluster.routing.allocation.disk.watermark.flood_stage=99%
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
     ports:
       - 9200:9200
       - 9300:9300
+    networks:
+      - ecommerce_elastic
     volumes:
     - ecommerce_local_elasticsearch_data:/usr/share/elasticsearch/data
