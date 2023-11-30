@@ -307,6 +307,14 @@ class ProductInventory(models.Model):
     def __str__(self):
         return self.product.name
 
+    @property
+    def categories_indexing(self):
+        """
+        Used in Elasticsearch indexing
+
+        """
+        return [category.name for category in self.product.category.all()]
+
 
 class Media(models.Model):
     """

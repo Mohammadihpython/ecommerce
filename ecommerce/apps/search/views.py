@@ -1,14 +1,11 @@
 import abc
-
-from django.http import HttpResponse
 from elasticsearch import Elasticsearch
 from elasticsearch_dsl import Q
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.views import APIView
 
-from ecommerce.apps.search.product_documents import ProductInventoryDocument
-
-from .product_search_serializers import SearchProductInventorySerializer
+from ecommerce.apps.product.documents import ProductInventoryDocument
+from ..product.endpoints.serializers import ProductInventorySerializer
 
 
 class PaginatedElasticSearchAPIView(APIView, LimitOffsetPagination):
@@ -22,23 +19,21 @@ class PaginatedElasticSearchAPIView(APIView, LimitOffsetPagination):
         and return a Q() expression."""
 
     def get(self, request):
-        try:
-            query = request.query_params.get("query")  # type: ignore
-            q = self.generate_q_expression(query)
-            search = self.document_class.search().query(q)  # type: ignore
-            response = search.e
+        query = request.query_params.get("query")  # type: ignore
+        q = self.generate_q_expression(query)
+        search = self.document_class.search().query(q)  # type: ignore
+        response = search.execute()
 
-            print(f"Found {response.hits.total.value} hit(s) for query: '{query}'")
+        # pprint(f"Found {response.hits.hits} hit(s) for query: '{query}'")
 
-            results = self.paginate_queryset(response, request, view=self)
-            serializer = self.serializer_class(results, many=True)  # type: ignore
-            return self.get_paginated_response(serializer.data)
-        except Exception as e:
-            return HttpResponse(e, status=500)  # type: ignore
+        results = self.paginate_queryset(response, request, view=self)
+        serializer = self.serializer_class(results, many=True)  # type: ignore
+        return self.get_paginated_response(serializer.data)
+        # return Response(serializer.data)
 
 
 class SearchProductInventoryView(PaginatedElasticSearchAPIView):
-    serializer_class = SearchProductInventorySerializer
+    serializer_class = ProductInventorySerializer
     document_class = ProductInventoryDocument
 
     """
@@ -50,13 +45,9 @@ class SearchProductInventoryView(PaginatedElasticSearchAPIView):
     """
 
     def generate_q_expression(self, query):
-        q = Q(
+        return Q(
             "multi_match",
-            query=self.request.query_params.get("query"),  # type: ignore
-            fields=["product__name", "description"],
+            query=self.request.query_params.get("search"),  # type: ignore
+            fields=["product.name", "product.description"],
             fuzziness="auto",
         )
-        print(
-            f"Generated Query: {q.to_dict()}"
-        )  # Add this line to see the generated query
-        return q

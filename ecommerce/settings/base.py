@@ -218,6 +218,8 @@ REST_FRAMEWORK = {
         "authentication": "5/minute",
         "verify_authentication": "5/minute",
     },
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.LimitOffsetPagination",
+    "PAGE_SIZE": 10,
 }
 
 

@@ -1,16 +1,16 @@
 from django.urls import reverse
+import pytest
 from rest_framework import status
+from ecommerce.tests.factories import AttributeValueFactory
 
 
+@pytest.mark.django_db
 def test_search_product_inventory_view(db, api_client, product_inventory_factory):
-    # Create a product inventory using the factory
-    for _ in range(2):
-        product_inventory_factory.create()
+    attribute_values = AttributeValueFactory.create_batch(5)
+    product_inventory_factory.create(attribute_values=attribute_values)
 
     query = "Product"  # Replace with your actual search query
-    url = (
-        reverse("search:search_product") + f"?query={query}"
-    )  # Replace with your URL name
+    url = reverse("search:product") + f"?search={query}"  # Replace with your URL name
     response = api_client.get(url)
 
     # Assert the response status code is HTTP 200 OK

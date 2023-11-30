@@ -47,6 +47,7 @@ class User(AbstractBaseUser, PermissionsMixin):
             "مشخص می کند که آیا کاربر می تواند به این سایت مدیریت وارد شود یا خیر."
         ),
     )
+    is_admin = models.BooleanField(default=False)
     is_active = models.BooleanField(
         _("فعال"),
         default=True,

@@ -10,6 +10,7 @@ from ecommerce.apps.product.models import (
     ProductAttribute,
     ProductInventory,
     ProductType,
+    ProductAttributeValue,
 )
 
 User = get_user_model()
@@ -50,36 +51,63 @@ class ProductTypeFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = ProductType
 
-    name = factory.Faker("word")
+    name = factory.Sequence(lambda n: f"type-{n+1}")
 
 
 class ProductAttributeFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = ProductAttribute
+        django_get_or_create = ["name"]
 
     name = factory.Faker("word")
     description = factory.Faker("sentence")
 
 
-class CategoryFactory(factory.django.DjangoModelFactory):
+class AttributeValueFactory(factory.django.DjangoModelFactory):
     class Meta:
-        model = Category
+        model = ProductAttributeValue
 
+    product_attribute = factory.SubFactory(ProductAttributeFactory)
+    attribute_value = factory.Faker("word")
+
+
+class CategoryFactory(factory.django.DjangoModelFactory):
     name = factory.Faker("word")
     slug = factory.Faker("slug")
     is_active = True
+
+    class Meta:
+        model = Category
+        django_get_or_create = ["name"]
 
 
 @register
 class ProductFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Product
+        django_get_or_create = ["web_id"]
 
-    web_id = factory.Sequence(lambda n: f"{n+1}")
+    web_id = factory.Sequence(lambda n: f"{n+2}")
     slug = factory.Faker("slug")
     name = factory.Sequence(lambda n: f"product-{n+1}")
     description = factory.Faker("text")
     is_active = True
+
+    @factory.post_generation
+    def category(self, create, extracted, **kwargs):
+        if not create:
+            # Simple build, do nothing.
+            return
+
+        if extracted:
+            # A list of categories were passed in, use them
+            for category in extracted:
+                self.category.add(category)
+
+
+class CategoryProductFactory(factory.django.DjangoModelFactory):
+    product = factory.SubFactory(ProductFactory)
+    category = factory.SubFactory(CategoryFactory)
 
 
 @register
@@ -89,8 +117,8 @@ class ProductInventoryFactory(factory.django.DjangoModelFactory):
 
     sku = factory.Sequence(lambda n: f"SKU-{n+1}")
     upc = factory.Sequence(lambda n: f"UPC-{n+1}")
+
     product_type = factory.SubFactory(ProductTypeFactory)
-    product = factory.SubFactory(ProductFactory)
     brand = factory.SubFactory(BrandFactory)
     is_active = True
     is_default = True
@@ -98,3 +126,24 @@ class ProductInventoryFactory(factory.django.DjangoModelFactory):
     store_price = 999.99
     sale_price = 999.99
     weight = 22.6
+
+    # def product(self, create, extracted, **kwargs):
+    #     if not create:
+    #         return
+
+    #     if extracted:
+    #         for category in extracted:
+    #             self.product.category.add(category)
+
+    @factory.post_generation
+    def attribute_values(self, create, extracted, **kwargs):
+        if not create or not extracted:
+            return
+        for item in extracted:
+            self.attribute_values.add(item)
+
+    @factory.lazy_attribute
+    def product(self):
+        categories = CategoryFactory.create_batch(3)  # Create 3 categories
+        # Create a product using the ProductFactory
+        return ProductFactory(category=categories)

@@ -8,10 +8,9 @@
 # # from ecommerce.apps.search import signals
 
 
-# from django.apps import AppConfig
+from django.apps import AppConfig
 
-# default_app_config = 'product.apps.ProductAppConfig'  # Replace with your actual AppConfig if used
 
-# def ready():
-#     # Import signals inside the ready function to ensure they are connected properly
-#     from ecommerce.apps.search import signals   # Import your signals here
+def ready():
+    # Import signals inside the ready function to ensure they are connected properly
+    from ecommerce.apps.search import signals  # Import your signals here
