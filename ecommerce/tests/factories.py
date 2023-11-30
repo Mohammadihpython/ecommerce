@@ -139,8 +139,8 @@ class ProductInventoryFactory(factory.django.DjangoModelFactory):
     def attribute_values(self, create, extracted, **kwargs):
         if not create or not extracted:
             return
-        for item in extracted:
-            self.attribute_values.add(item)
+        for attribute_values in extracted:
+            self.attribute_values.add(attribute_values)
 
     @factory.lazy_attribute
     def product(self):

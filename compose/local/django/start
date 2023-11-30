@@ -5,4 +5,5 @@ set -o pipefail
 set -o nounset
 
 python manage.py migrate
+exec python manage.py search_index --rebuil
 exec python manage.py runserver
