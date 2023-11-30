@@ -55,6 +55,8 @@ services:
   redis:
     image: redis:6
     container_name: ecommerce_local_redis
+    networks:
+      - ecommerce
 
   celeryworker:
     <<: *django
