@@ -35,8 +35,8 @@ def test_create_user_without_phone_number():
 
 
 def test_create_superuser(db, django_user_model, user_factory):
-    user = user_factory.build()
+    user_factory = user_factory.build()
     user = django_user_model.objects.create_superuser(
-        phone_number=user.phone_number, password=fake.password()
+        phone_number=user_factory.phone_number, password=fake.password()
     )
     assert user.is_superuser is True

@@ -21,3 +21,4 @@ class UserManager(BaseUserManager):
         user = self.model(phone_number=phone_number, **extra_fields)
         user.set_password(password)
         user.save()
+        return user
