@@ -22,11 +22,11 @@ services:
     depends_on:
       - postgres
       - redis
-      - elasticsearch
+      - es
     volumes:
       - .:/app:z
     links:
-      - elasticsearch:elasticsearch
+      - es:es
     networks:
       - ecommerce_elastic
       - ecommerce
@@ -92,8 +92,8 @@ services:
       - ecommerce
     command: /start-flower
 
-  elasticsearch:
-    container_name: elasticsearch
+  es:
+    container_name: es
     image: docker.elastic.co/elasticsearch/elasticsearch:8.7.1
     # 8.x
     environment:
