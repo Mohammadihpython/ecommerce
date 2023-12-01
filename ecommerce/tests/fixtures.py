@@ -1,6 +1,10 @@
+import contextlib
 import pytest
 from rest_framework.test import APIClient
 from rest_framework_simplejwt.tokens import AccessToken
+
+import time
+import requests
 
 
 @pytest.fixture
@@ -17,3 +21,21 @@ def authenticated_client():
         return client
 
     return _create_client
+
+
+# Fixture to check Elasticsearch availability
+@pytest.fixture(scope="session")
+def wait_for_elasticsearch():
+    max_retries = 30
+    for _ in range(max_retries):
+        with contextlib.suppress(requests.ConnectionError):
+            # Attempt to connect to Elasticsearch
+            response = requests.get(
+                "http://es:9200"
+            )  # Replace with your Elasticsearch URL
+            if response.status_code == 200:
+                return  # If successful, return immediately
+        # Wait for a brief moment before the next retry
+        time.sleep(5)
+    # If Elasticsearch is not available after the maximum retries, raise an error
+    raise RuntimeError("Elasticsearch is not available")

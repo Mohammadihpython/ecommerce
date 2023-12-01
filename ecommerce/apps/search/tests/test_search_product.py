@@ -5,7 +5,9 @@ from ecommerce.tests.factories import AttributeValueFactory
 
 
 @pytest.mark.django_db
-def test_search_product_inventory_view(db, api_client, product_inventory_factory):
+def test_search_product_inventory_view(
+    db, api_client, product_inventory_factory, wait_for_elasticsearch
+):
     attribute_values = AttributeValueFactory.create_batch(5)
     product_inventory_factory.create(attribute_values=attribute_values)
 
