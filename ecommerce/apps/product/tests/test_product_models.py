@@ -42,6 +42,6 @@ def test_product_attribute_value_model(
 
 @pytest.mark.django_db
 def test_product_inventory_model(db, product_factory, product_inventory_factory):
-    product = product_factory.create()
-    inventory_product = product_inventory_factory(product=product)
+    # product = product_factory.create()
+    inventory_product = product_inventory_factory()
     assert str(inventory_product) == inventory_product.product.name
