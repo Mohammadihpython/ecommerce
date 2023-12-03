@@ -24,6 +24,8 @@ from drf_spectacular.views import (
     SpectacularSwaggerView,
 )
 
+from ecommerce.apps.product.endpoints.urls import router
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
@@ -35,12 +37,16 @@ urlpatterns = [
         name="redoc",
     ),
     path(
-        "account/",
+        "api/account/",
         include("ecommerce.apps.account.endpoints.urls", namespace="account"),
     ),
     path(
-        "search/",
+        "api/search/",
         include("ecommerce.apps.search.urls", namespace="search"),
+    ),
+    path(
+        "api/product/",
+        include(router.urls),
     ),
 ]
 
