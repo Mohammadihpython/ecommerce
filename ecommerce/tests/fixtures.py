@@ -31,7 +31,7 @@ def wait_for_elasticsearch():
         with contextlib.suppress(requests.ConnectionError):
             # Attempt to connect to Elasticsearch
             response = requests.get(
-                "http://es:9200"
+                "http://localhost:9200"
             )  # Replace with your Elasticsearch URL
             if response.status_code == 200:
                 return  # If successful, return immediately

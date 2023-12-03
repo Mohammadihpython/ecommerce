@@ -35,9 +35,9 @@ def test_brand_model(db, brand_factory):
 def test_product_attribute_value_model(
     db, product_attribute_factory, attribute_value_factory
 ):
-    pt = product_attribute_factory.create()
-    p = attribute_value_factory(product_attribute=pt)
-    assert str(p) == f"{p.pt.name} : {p.attribute_value}"
+    product_attribute = product_attribute_factory.create()
+    p = attribute_value_factory(product_attribute=product_attribute)
+    assert str(p) == f"{p.product_attribute.name} : {p.attribute_value}"
 
 
 @pytest.mark.django_db
