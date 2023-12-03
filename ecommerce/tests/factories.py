@@ -8,9 +8,9 @@ from ecommerce.apps.product.models import (
     Category,
     Product,
     ProductAttribute,
+    ProductAttributeValue,
     ProductInventory,
     ProductType,
-    ProductAttributeValue,
 )
 
 User = get_user_model()
@@ -40,6 +40,7 @@ class UpdateUserFactory(factory.django.DjangoModelFactory):
 # product factory
 
 
+@register
 class BrandFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Brand
@@ -47,6 +48,7 @@ class BrandFactory(factory.django.DjangoModelFactory):
     name = factory.Faker("company")
 
 
+@register
 class ProductTypeFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = ProductType
@@ -54,6 +56,7 @@ class ProductTypeFactory(factory.django.DjangoModelFactory):
     name = factory.Sequence(lambda n: f"type-{n+1}")
 
 
+@register
 class ProductAttributeFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = ProductAttribute
@@ -63,6 +66,7 @@ class ProductAttributeFactory(factory.django.DjangoModelFactory):
     description = factory.Faker("sentence")
 
 
+@register
 class AttributeValueFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = ProductAttributeValue
@@ -71,6 +75,7 @@ class AttributeValueFactory(factory.django.DjangoModelFactory):
     attribute_value = factory.Faker("word")
 
 
+@register
 class CategoryFactory(factory.django.DjangoModelFactory):
     name = factory.Faker("word")
     slug = factory.Faker("slug")
@@ -102,12 +107,7 @@ class ProductFactory(factory.django.DjangoModelFactory):
         if extracted:
             # A list of categories were passed in, use them
             for category in extracted:
-                self.category.add(category)
-
-
-class CategoryProductFactory(factory.django.DjangoModelFactory):
-    product = factory.SubFactory(ProductFactory)
-    category = factory.SubFactory(CategoryFactory)
+                self.category.add(category)  # type: ignore
 
 
 @register
@@ -126,14 +126,6 @@ class ProductInventoryFactory(factory.django.DjangoModelFactory):
     store_price = 999.99
     sale_price = 999.99
     weight = 22.6
-
-    # def product(self, create, extracted, **kwargs):
-    #     if not create:
-    #         return
-
-    #     if extracted:
-    #         for category in extracted:
-    #             self.product.category.add(category)
 
     @factory.post_generation
     def attribute_values(self, create, extracted, **kwargs):

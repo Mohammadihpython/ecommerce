@@ -1,25 +1,8 @@
-from rest_framework import mixins, viewsets
 from django.db.models import Prefetch
-from rest_framework.permissions import (
-    IsAuthenticatedOrReadOnly,
-    IsAdminUser,
-)
+from rest_framework import mixins, viewsets
+from rest_framework.permissions import IsAdminUser, IsAuthenticatedOrReadOnly
 from rest_framework.response import Response
 
-from .serializers import (
-    BrandSerializer,
-    CategorySerializer,
-    MediaSerializer,
-    ProductAttributeSerializer,
-    ProductAttributeValueSerializer,
-    ProductAttributeValuesSerializer,
-    ProductInventoryLightSerializer,
-    ProductSerializer,
-    ProductInventorySerializer,
-    ProductTypeAttributeSerializer,
-    ProductTypeSerializer,
-    StockSerializer,
-)
 from ..models import (
     Brand,
     Category,
@@ -32,6 +15,20 @@ from ..models import (
     ProductType,
     ProductTypeAttribute,
     Stock,
+)
+from .serializers import (
+    BrandSerializer,
+    CategorySerializer,
+    MediaSerializer,
+    ProductAttributeSerializer,
+    ProductAttributeValueSerializer,
+    ProductAttributeValuesSerializer,
+    ProductInventoryLightSerializer,
+    ProductInventorySerializer,
+    ProductSerializer,
+    ProductTypeAttributeSerializer,
+    ProductTypeSerializer,
+    StockSerializer,
 )
 
 

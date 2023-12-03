@@ -1,10 +1,12 @@
 import abc
+
 from elasticsearch import Elasticsearch
 from elasticsearch_dsl import Q
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.views import APIView
 
 from ecommerce.apps.product.documents import ProductInventoryDocument
+
 from ..product.endpoints.serializers import ProductInventorySerializer
 
 

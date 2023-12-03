@@ -1,6 +1,7 @@
-from django.urls import reverse
 import pytest
+from django.urls import reverse
 from rest_framework import status
+
 from ecommerce.tests.factories import AttributeValueFactory
 
 

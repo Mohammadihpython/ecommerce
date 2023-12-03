@@ -1,3 +1,6 @@
+from rest_framework import serializers
+
+from ecommerce.apps.product.models import ProductAttributeValues  # type: ignore
 from ecommerce.apps.product.models import (
     Brand,
     Category,
@@ -5,13 +8,11 @@ from ecommerce.apps.product.models import (
     Product,
     ProductAttribute,
     ProductAttributeValue,
-    ProductAttributeValues,  # type: ignore
-    ProductTypeAttribute,
     ProductInventory,
     ProductType,
+    ProductTypeAttribute,
     Stock,
 )
-from rest_framework import serializers
 
 
 class ProductAttributeValueSerializer(serializers.ModelSerializer):
