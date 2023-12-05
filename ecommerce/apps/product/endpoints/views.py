@@ -30,9 +30,11 @@ from .serializers import (
     ProductTypeSerializer,
     StockSerializer,
 )
+from django.contrib.postgres.search import TrigramSimilarity
+from django.db.models.functions import Greatest
 
 
-class ProductByCategory(mixins.ListModelMixin, viewsets.GenericViewSet):
+class ProductByCategory(viewsets.GenericViewSet, mixins.RetrieveModelMixin):
 
     """
     API endpoint that returns products by category
@@ -40,11 +42,19 @@ class ProductByCategory(mixins.ListModelMixin, viewsets.GenericViewSet):
 
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
+    lookup_field = "category_slug"
 
-    def list(self, request, slug=None, *args, **kwargs):
-        queryset = self.queryset.filter(
-            product__category__slug=slug,
-        ).filter(is_default=True)
+    def retrieve(self, request, category_slug: str, *args, **kwargs):
+        queryset = (
+            self.queryset.annotate(
+                similarity=Greatest(
+                    TrigramSimilarity("category__slug", category_slug),
+                    TrigramSimilarity("category__name", category_slug),
+                )
+            )
+            .filter(similarity__gte=0.3)
+            .order_by("-similarity")
+        )
 
         serializer = ProductSerializer(
             queryset, context={"request": request}, many=True
@@ -65,12 +75,16 @@ class AllProductViewSet(
     lookup_field = "slug"
 
     def retrieve(self, request, slug=None):
-        queryset = Product.objects.filter(slug=slug)
-        serializer = ProductSerializer(queryset, many=True)
+        queryset = Product.objects.filter(slug__icontains=slug)
+        serializer = ProductSerializer(
+            queryset,
+            many=True,
+            context={"request": request},
+        )
         return Response(serializer.data)
 
 
-class AllInventoryProductByProduct(mixins.RetrieveModelMixin, viewsets.GenericViewSet):
+class AllInventoryProductByProduct(viewsets.GenericViewSet, mixins.RetrieveModelMixin):
 
     """
     API endpoint that returns variant of products
@@ -78,21 +92,27 @@ class AllInventoryProductByProduct(mixins.RetrieveModelMixin, viewsets.GenericVi
 
     serializer_class = ProductInventoryLightSerializer
     permission_classes = [IsAuthenticatedOrReadOnly]
+    lookup_field = "productId"
+    queryset = ProductInventory.objects.all()
 
-    def get_queryset(self):
-        product_id = self.request.query_params.get("product_id")  # type: ignore
-        return ProductInventory.objects.filter(product_id=product_id).prefetch_related(
+    def retrieve(self, request, productId=None, *args, **kwargs):
+        queryset = self.queryset.filter(  # type: ignore
+            product_id=productId
+        ).prefetch_related(
             Prefetch(
-                "product_inventory_media",
+                "media_product_inventory",
                 queryset=Media.objects.filter(is_feature=True),
                 to_attr="filtered_media",
             )
         )
-
-    def retrieve(self, request, *args, **kwargs):
-        queryset = self.get_queryset()
-        serializer = self.get_serializer(queryset, many=True)
-        return Response(serializer.data)
+        serializer = ProductInventorySerializer(
+            queryset,
+            many=True,
+            context={"request": request},
+        )
+        return Response(
+            serializer.data,
+        )
 
 
 class ProductViewSet(viewsets.ModelViewSet):
@@ -170,6 +190,6 @@ class ProductTypeAttributeViewSets(viewsets.ModelViewSet):
 class InventoryProductDetailViewSet(mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     queryset = ProductInventory.objects.select_related(
         "product_inventory"
-    ).prefetch_related("product_inventory_media")
+    ).prefetch_related("media_product_inventory")
 
     serializer_class = ProductInventorySerializer
