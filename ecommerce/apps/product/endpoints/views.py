@@ -30,8 +30,6 @@ from .serializers import (
     ProductTypeSerializer,
     StockSerializer,
 )
-from django.contrib.postgres.search import TrigramSimilarity
-from django.db.models.functions import Greatest
 
 
 class ProductByCategory(viewsets.GenericViewSet, mixins.RetrieveModelMixin):
@@ -45,16 +43,7 @@ class ProductByCategory(viewsets.GenericViewSet, mixins.RetrieveModelMixin):
     lookup_field = "category_slug"
 
     def retrieve(self, request, category_slug: str, *args, **kwargs):
-        queryset = (
-            self.queryset.annotate(
-                similarity=Greatest(
-                    TrigramSimilarity("category__slug", category_slug),
-                    TrigramSimilarity("category__name", category_slug),
-                )
-            )
-            .filter(similarity__gte=0.3)
-            .order_by("-similarity")
-        )
+        queryset = self.queryset.filter(category__slug__icontains=category_slug)
 
         serializer = ProductSerializer(
             queryset, context={"request": request}, many=True

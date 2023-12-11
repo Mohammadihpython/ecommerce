@@ -1,16 +1,17 @@
 from django.contrib import admin
+
 from .models import (
+    Brand,
     Category,
+    Media,
     Product,
     ProductAttribute,
-    ProductType,
-    Brand,
     ProductAttributeValue,
-    ProductInventory,
-    Media,
-    Stock,
     ProductAttributeValues,
+    ProductInventory,
+    ProductType,
     ProductTypeAttribute,
+    Stock,
 )
 
 

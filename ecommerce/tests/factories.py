@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import factory
 from django.contrib.auth import get_user_model
 from faker import Faker
@@ -6,6 +8,7 @@ from pytest_factoryboy import register
 from ecommerce.apps.product.models import (
     Brand,
     Category,
+    Media,
     Product,
     ProductAttribute,
     ProductAttributeValue,
@@ -139,3 +142,16 @@ class ProductInventoryFactory(factory.django.DjangoModelFactory):
         categories = CategoryFactory.create_batch(3)  # Create 3 categories
         # Create a product using the ProductFactory
         return ProductFactory(category=categories)
+
+
+@register
+class MediaFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = Media
+
+    product_inventory = factory.SubFactory(ProductInventoryFactory)
+    image = factory.django.ImageField(filename="example_image.jpg")
+    alt_text = factory.Faker("sentence", nb_words=6)
+    is_feature = factory.Faker("boolean")
+    created_at = factory.LazyFunction(datetime.now)
+    updated_at = factory.LazyFunction(datetime.now)

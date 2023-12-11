@@ -1,6 +1,9 @@
+from django.urls import include, path
 from rest_framework import routers
 
 from . import views
+
+app_name = "product"
 
 router = routers.DefaultRouter()
 router.register(r"products", views.ProductViewSet)
@@ -17,10 +20,10 @@ router.register(r"product-type-attributes", views.ProductTypeAttributeViewSets)
 router.register(r"inventory-product-detail", views.InventoryProductDetailViewSet)
 router.register(r"all-products", views.AllProductViewSet, basename="all-products")
 router.register(
-    r"all-inventory-product-by-product",
+    r"inventory-products-by-productID",
     views.AllInventoryProductByProduct,
-    basename="all-inventory-product-by-product",
+    basename="inventory-products-by-productID",
 )
-router.register(
-    r"products-by-category", views.ProductByCategory, basename="products-by-category"
-)
+router.register(r"by-category", views.ProductByCategory, basename="by-category")
+
+urlpatterns = [path("", include(router.urls))]

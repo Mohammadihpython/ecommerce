@@ -3,6 +3,7 @@
 import django.db.models.deletion
 import mptt.fields
 from django.db import migrations, models
+from django.db.migrations.operations import RunSQL
 
 
 class Migration(migrations.Migration):
@@ -11,6 +12,7 @@ class Migration(migrations.Migration):
     dependencies = []
 
     operations = [
+        # RunSQL(sql="CREATE EXTENSION IF NOT EXISTS pg_trgm;",reverse_sql='DROP EXTENSION pg_trgm;'),
         migrations.CreateModel(
             name="Brand",
             fields=[
