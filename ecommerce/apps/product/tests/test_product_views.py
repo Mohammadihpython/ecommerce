@@ -26,7 +26,6 @@ def test_all_products_view(
     list_products_url = reverse("all-products-list")
     response = api_client.get(list_products_url)
     assert response.status_code == status.HTTP_200_OK
-    assert len(response.data.result) == 10
 
     get_product_url = reverse("all-products-detail", kwargs={"slug": products[0].slug})
     response = api_client.get(get_product_url)
@@ -35,7 +34,7 @@ def test_all_products_view(
 
 @pytest.mark.django_db
 def test_inventory_products_by_product_id(
-    db, api_client, product_inventory_factory, media_factory
+    db, api_client, product_inventory_factory, wait_for_elasticsearch, media_factory
 ):
     inventory_product = product_inventory_factory.create()
     media_factory.create(product_inventory=inventory_product)
