@@ -72,13 +72,16 @@ class ProductTypeAttributeSerializer(serializers.ModelSerializer):
 
 
 class ProductSerializer(serializers.ModelSerializer):
-    category = CategorySerializer(many=True)
+    category = CategorySerializer(many=True, read_only=True)
 
     class Meta:
         model = Product
-        fields = ["slug", "name", "description", "category"]
+        fields = ["id", "slug", "name", "description", "category"]
         read_only = True
         editable = False
+
+    def create(self, validated_data):
+        return Product.objects.create(**validated_data)
 
 
 class StockSerializer(serializers.ModelSerializer):

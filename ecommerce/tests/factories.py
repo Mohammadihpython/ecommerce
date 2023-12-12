@@ -95,6 +95,7 @@ class ProductFactory(factory.django.DjangoModelFactory):
         model = Product
         django_get_or_create = ["web_id"]
 
+    id = factory.Sequence(lambda n: n + 1)
     web_id = factory.Sequence(lambda n: f"{n+2}")
     slug = factory.Faker("slug")
     name = factory.Sequence(lambda n: f"product-{n+1}")
@@ -135,7 +136,7 @@ class ProductInventoryFactory(factory.django.DjangoModelFactory):
         if not create or not extracted:
             return
         for attribute_values in extracted:
-            self.attribute_values.add(attribute_values)
+            self.attribute_values.add(attribute_values)  # type: ignore
 
     @factory.lazy_attribute
     def product(self):

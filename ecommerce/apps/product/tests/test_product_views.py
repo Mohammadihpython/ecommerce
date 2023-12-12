@@ -2,6 +2,9 @@ import pytest
 from django.urls import reverse
 from rest_framework import status
 
+from ecommerce.apps.product.endpoints.serializers import ProductSerializer
+from ecommerce.apps.product.models import Product
+
 
 @pytest.mark.django_db
 def test_product_by_category_view(db, api_client, product_factory, category_factory):
@@ -45,3 +48,65 @@ def test_inventory_products_by_product_id(
     )
     response = api_client.get(list_products_url)
     assert response.status_code == status.HTTP_200_OK
+
+
+@pytest.mark.django_db
+class TestProductViewSet:
+    def test_product_detail(
+        self, db, authenticated_client, product_factory, user_factory
+    ):
+        superuser = user_factory.create(is_superuser=True, is_staff=True)
+        client = authenticated_client(superuser)
+        product_detail = product_factory.create()
+        url = reverse(
+            "product-detail",
+            kwargs={"pk": product_detail.pk},
+        )
+        response = client.get(url)
+        assert response.status_code == status.HTTP_200_OK
+
+    def test_product_list(
+        self, db, product_factory, authenticated_client, user_factory
+    ):
+        superuser = user_factory.create(is_superuser=True, is_staff=True)
+        client = authenticated_client(superuser)
+        # create products
+        product_factory.create_batch(40)
+        # test get data
+        url = reverse("product-list")
+        response = client.get(url)
+        assert response.status_code == status.HTTP_200_OK
+
+    def test_product_create(
+        self, authenticated_client, user_factory, product_factory, category_factory
+    ):
+        # create an authenticated user
+        superuser = user_factory.create(is_superuser=True, is_staff=True)
+        client = authenticated_client(superuser)
+
+        # create a new product data
+        categories = category_factory.create_batch(5)
+        product = product_factory.stub(category=categories)
+        serializer = ProductSerializer(instance=product)
+        new_product = dict(serializer.data)
+        new_product["category"] = [category.id for category in categories]
+
+        # get url of view
+        url = reverse("product-list")
+        # send new product to create them
+        response = client.post(url, data=new_product, format="json")
+
+        assert response.status_code == status.HTTP_201_CREATED
+
+    def test_product_delete(
+        self, db, product_factory, user_factory, authenticated_client
+    ):
+        superuser = user_factory.create(is_superuser=True, is_staff=True)
+        client = authenticated_client(superuser)
+        product_detail = product_factory.create()
+        url = reverse(
+            "product-detail",
+            kwargs={"pk": product_detail.pk},
+        )
+        response = client.delete(url)
+        assert response.status_code == status.HTTP_204_NO_CONTENT

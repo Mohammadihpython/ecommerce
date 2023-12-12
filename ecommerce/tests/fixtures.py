@@ -12,6 +12,9 @@ def api_client():
     return APIClient()
 
 
+APIClient()
+
+
 @pytest.fixture
 def authenticated_client():
     def _create_client(user):
