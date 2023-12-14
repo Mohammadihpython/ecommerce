@@ -66,4 +66,5 @@ class ProductInventoryDocument(Document):
             "store_price",
             "is_default",
             "retail_price",
+            "weight",
         ]

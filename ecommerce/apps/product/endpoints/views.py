@@ -118,8 +118,20 @@ class BrandViewSet(viewsets.ModelViewSet):
 
 class ProductInventoryViewSet(viewsets.ModelViewSet):
     queryset = ProductInventory.objects.all()
-    permission_classes = [IsAdminUser]
+    # permission_classes = [IsAdminUser]
     serializer_class = ProductInventorySerializer
+
+    def perform_create(self, serializer):
+        brand_id = self.request.data.get("brand")
+        brand = Brand.objects.get(id=brand_id)
+
+        product_id = self.request.data.get("product")
+        product = Product.objects.get(id=product_id)
+
+        product_type_id = self.request.data.get("product_type")
+        product_type = ProductType.objects.get(id=product_type_id)
+
+        serializer.save(brand=brand, product=product, product_type=product_type)
 
 
 class CategoryViewSet(viewsets.ModelViewSet):

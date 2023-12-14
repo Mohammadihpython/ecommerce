@@ -35,6 +35,8 @@ class UpdateUserFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = User
 
+    id = factory.Sequence(lambda n: n + 1)
+
     first_name = factory.Faker("first_name")
     last_name = factory.Faker("last_name")
     phone_number = factory.Sequence(lambda n: f"989{str(n).zfill(9)}")
@@ -47,6 +49,9 @@ class UpdateUserFactory(factory.django.DjangoModelFactory):
 class BrandFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Brand
+        django_get_or_create = ["id"]
+
+    id = factory.Sequence(lambda n: n + 1)
 
     name = factory.Faker("company")
 
@@ -55,6 +60,8 @@ class BrandFactory(factory.django.DjangoModelFactory):
 class ProductTypeFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = ProductType
+
+    id = factory.Sequence(lambda n: n + 1)
 
     name = factory.Sequence(lambda n: f"type-{n+1}")
 
@@ -65,6 +72,8 @@ class ProductAttributeFactory(factory.django.DjangoModelFactory):
         model = ProductAttribute
         django_get_or_create = ["name"]
 
+    id = factory.Sequence(lambda n: n + 1)
+
     name = factory.Faker("word")
     description = factory.Faker("sentence")
 
@@ -74,12 +83,15 @@ class AttributeValueFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = ProductAttributeValue
 
+    id = factory.Sequence(lambda n: n + 1)
+
     product_attribute = factory.SubFactory(ProductAttributeFactory)
     attribute_value = factory.Faker("word")
 
 
 @register
 class CategoryFactory(factory.django.DjangoModelFactory):
+    id = factory.Sequence(lambda n: n + 1)
     name = factory.Faker("word")
     slug = factory.Faker("slug")
     is_active = True
@@ -94,6 +106,7 @@ class ProductFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Product
         django_get_or_create = ["web_id"]
+        skip_postgeneration_save = True
 
     id = factory.Sequence(lambda n: n + 1)
     web_id = factory.Sequence(lambda n: f"{n+2}")
@@ -156,3 +169,6 @@ class MediaFactory(factory.django.DjangoModelFactory):
     is_feature = factory.Faker("boolean")
     created_at = factory.LazyFunction(datetime.now)
     updated_at = factory.LazyFunction(datetime.now)
+
+
+ProductInventoryFactory

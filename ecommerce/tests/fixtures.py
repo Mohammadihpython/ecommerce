@@ -39,6 +39,6 @@ def wait_for_elasticsearch():
             if response.status_code == 200:
                 return  # If successful, return immediately
         # Wait for a brief moment before the next retry
-        time.sleep(5)
+        time.sleep(15)
     # If Elasticsearch is not available after the maximum retries, raise an error
     raise RuntimeError("Elasticsearch is not available")

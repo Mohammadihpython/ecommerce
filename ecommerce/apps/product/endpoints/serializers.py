@@ -105,6 +105,8 @@ class ProductInventorySerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "store_price",
+            "sale_price",
+            "weight",
             "is_default",
             "retail_price",
             "product",
@@ -114,7 +116,6 @@ class ProductInventorySerializer(serializers.ModelSerializer):
             "attribute_values",
             "stock",
         ]
-        read_only = True
 
 
 class ProductAttributeValuesSerializer(serializers.ModelSerializer):
