@@ -1,10 +1,59 @@
-from datetime import datetime
+"""
+here are some more options that you can use with factory.Faker to generate random values:
+word: Generates a random word.
+sentence: Generates a random sentence.
+paragraph: Generates a random paragraph.
+text: Generates a random text.
+ipv4: Generates a random IPv4 address.
+ipv6: Generates a random IPv6 address.
+mac_address: Generates a random MAC address.
+user_name: Generates a random username.
+password: Generates a random password.
+url: Generates a random URL.
+slug: Generates a random slug.
+color: Generates a random color.
+file_name: Generates a random file name.
+file_path: Generates a random file path.
+mime_type: Generates a random MIME type.
+credit_card_number: Generates a random credit card number.
+credit_card_expire: Generates a random credit card expiration date.
+credit_card_security_code: Generates a random credit card security code.
+ssn: Generates a random social security number.
+isbn13: Generates a random ISBN-13 number.
+ean13: Generates a random EAN-13 number.
+ean8: Generates a random EAN-8 number.
+isbn10: Generates a random ISBN-10 number.
+currency_code: Generates a random currency code.
+currency_name: Generates a random currency name.
+currency_symbol: Generates a random currency symbol.
+first_name: Generates a random first name.
+last_name: Generates a random last name.
+name: Generates a random full name.
+email: Generates a random email address.
+phone_number: Generates a random phone number.
+date: Generates a random date.
+time: Generates a random time.
+address: Generates a random address.
+city: Generates a random city name.
+state: Generates a random state name.
+zip_code: Generates a random zip code.
+country: Generates a random country name.
+latitude: Generates a random latitude value.
+longitude: Generates a random longitude value.
+random_int: Generates a random integer.
+random_digit: Generates a random digit.
+random_letter: Generates a random letter.
+random_element: Generates a random element from a list.
+random_sample: Generates a random sample of elements from a list.
+"""
 
+from datetime import datetime
 import factory
 from django.contrib.auth import get_user_model
 from faker import Faker
 from pytest_factoryboy import register
 
+from ecommerce.apps.cart.models import Cart
 from ecommerce.apps.product.models import (
     Brand,
     Category,
@@ -16,6 +65,7 @@ from ecommerce.apps.product.models import (
     ProductType,
 )
 
+
 User = get_user_model()
 fake = Faker("fa_IR")
 
@@ -25,6 +75,7 @@ class UserFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = User
 
+    id = factory.Sequence(lambda n: n + 1)
     is_superuser = False
     is_staff = False
     phone_number = factory.Sequence(lambda n: f"989{str(n).zfill(9)}")
@@ -132,6 +183,7 @@ class ProductInventoryFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = ProductInventory
 
+    id = factory.Sequence(lambda n: n + 1)
     sku = factory.Sequence(lambda n: f"SKU-{n+1}")
     upc = factory.Sequence(lambda n: f"UPC-{n+1}")
 
@@ -171,4 +223,11 @@ class MediaFactory(factory.django.DjangoModelFactory):
     updated_at = factory.LazyFunction(datetime.now)
 
 
-ProductInventoryFactory
+# cart factory
+@register
+class CartFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = Cart
+
+    product = factory.SubFactory(ProductInventoryFactory)
+    quantity = factory.Faker("random_int", min=0)

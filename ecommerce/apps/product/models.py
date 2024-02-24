@@ -371,7 +371,7 @@ class Media(models.Model):
 class Stock(models.Model):
     product_inventory = models.OneToOneField(
         ProductInventory,
-        related_name="product_inventory",
+        related_name="stock",
         on_delete=models.PROTECT,
     )
     last_checked = models.DateTimeField(

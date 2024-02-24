@@ -3,6 +3,7 @@ import time
 
 import pytest
 import requests
+from django.conf import settings
 from rest_framework.test import APIClient
 from rest_framework_simplejwt.tokens import AccessToken
 
@@ -29,12 +30,13 @@ def authenticated_client():
 # Fixture to check Elasticsearch availability
 @pytest.fixture(scope="session")
 def wait_for_elasticsearch():
+    es_host = settings.ELASTICSEARCH_HOST_NAME
     max_retries = 3
     for _ in range(max_retries):
         with contextlib.suppress(requests.ConnectionError):
             # Attempt to connect to Elasticsearch
             response = requests.get(
-                "http://es:9200"
+                f"http://{es_host}:9200"
             )  # Replace with your Elasticsearch URL
             if response.status_code == 200:
                 return  # If successful, return immediately

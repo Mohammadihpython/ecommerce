@@ -54,6 +54,7 @@ LOCAL_APPS = [
     "ecommerce.apps.account",
     "ecommerce.apps.product",
     "ecommerce.apps.search",
+    "ecommerce.apps.cart",
 ]
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
 
@@ -253,3 +254,4 @@ EXPIRY_TIME_OTP = 300
 # https://django-elasticsearch-dsl.readthedocs.io/en/latest/settings.html
 
 ELASTICSEARCH_DSL = {"default": {"hosts": env("ELASTIC_HOST")}}
+ELASTICSEARCH_HOST_NAME = env("ELASTICSEARCH_HOST_NAME")

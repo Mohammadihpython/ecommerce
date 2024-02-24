@@ -1,4 +1,5 @@
 from django.db.models import Prefetch
+from django.shortcuts import get_object_or_404
 from rest_framework import mixins, viewsets
 from rest_framework.permissions import IsAdminUser, IsAuthenticatedOrReadOnly
 from rest_framework.response import Response
@@ -122,16 +123,16 @@ class ProductInventoryViewSet(viewsets.ModelViewSet):
     serializer_class = ProductInventorySerializer
 
     def perform_create(self, serializer):
-        brand_id = self.request.data.get("brand")
-        brand = Brand.objects.get(id=brand_id)
+        brand_id = self.request.data.get("brand")  # type: ignore
+        brand = get_object_or_404(Brand, id=brand_id)
 
-        product_id = self.request.data.get("product")
-        product = Product.objects.get(id=product_id)
+        product_id = self.request.data.get("product")  # type: ignore
+        product = get_object_or_404(Product, id=product_id)
 
-        product_type_id = self.request.data.get("product_type")
-        product_type = ProductType.objects.get(id=product_type_id)
+        product_type_id = self.request.data.get("product_type")  # type: ignore
+        product_type = get_object_or_404(ProductType, id=product_type_id)
 
-        serializer.save(brand=brand, product=product, product_type=product_type)
+        serializer.save(brand_id=brand.id, product_id=product.id, product_type_id=product_type.id)  # type: ignore
 
 
 class CategoryViewSet(viewsets.ModelViewSet):

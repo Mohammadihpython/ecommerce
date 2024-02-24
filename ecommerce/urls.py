@@ -48,7 +48,12 @@ urlpatterns = [
         "api/product/",
         include(router.urls),
     ),
+    path(
+        "api/cart/",
+        include("ecommerce.apps.cart.endpoints.urls", namespace="cart"),
+    ),
 ]
+
 
 if settings.DEBUG:
     # This allows the error pages to be debugged during development, just visit
