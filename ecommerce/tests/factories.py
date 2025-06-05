@@ -145,7 +145,7 @@ class AttributeValueFactory(factory.django.DjangoModelFactory):
 class CategoryFactory(factory.django.DjangoModelFactory):
     id = factory.Sequence(lambda n: n + 1)
     name = factory.Faker("word")
-    slug = factory.Faker("slug")
+    slug = fake.slug()
     is_active = True
 
     class Meta:
@@ -160,7 +160,7 @@ class ProductFactory(factory.django.DjangoModelFactory):
         django_get_or_create = ["web_id"]
         skip_postgeneration_save = True
 
-    id = factory.Sequence(lambda n: n + 1)
+    id = factory.Sequence(lambda n: n + 1)  # type: ignore
     web_id = factory.Sequence(lambda n: f"{n + 2}")
     slug = factory.Faker("slug")
     name = factory.Sequence(lambda n: f"product-{n + 1}")
