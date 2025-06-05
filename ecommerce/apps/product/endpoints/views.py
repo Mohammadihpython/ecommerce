@@ -34,7 +34,6 @@ from .serializers import (
 
 
 class ProductByCategory(viewsets.GenericViewSet, mixins.RetrieveModelMixin):
-
     """
     API endpoint that returns products by category
     """
@@ -75,7 +74,6 @@ class AllProductViewSet(
 
 
 class AllInventoryProductByProduct(viewsets.GenericViewSet, mixins.RetrieveModelMixin):
-
     """
     API endpoint that returns variant of products
     """

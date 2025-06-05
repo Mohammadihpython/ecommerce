@@ -1,14 +1,16 @@
+from collections.abc import Callable
+from datetime import datetime, timedelta
+from typing import Any
 
-from celery.app import defaults
-from django.db import IntegrityError
+from django.db import IntegrityError, connection, transaction
+
 from ecommerce.apps.wallet.models import Wallet
-from ..params import CallbackResponse
-from datetime import datetime,timedelta
-from typing import Callable, Any
 from ecommerce.apps.wallet.service import Repository
+
 from ..models import Transaction
-from ..types import TransactionState,Transaction as TransactionType
-from django.db import transaction,connection
+from ..types import Transaction as TransactionType
+from ..types import TransactionState
+
 
 class WalletRepo(Repository):
     @staticmethod
@@ -18,7 +20,9 @@ class WalletRepo(Repository):
             wallet = Wallet.objects.create(user_id=user_id, balance=0)
             return wallet.pk  # Use the primary key attribute
         except IntegrityError as e:
-            if "unique constraint" in str(e).lower():  # Handling duplicate wallet creation
+            if (
+                "unique constraint" in str(e).lower()
+            ):  # Handling duplicate wallet creation
                 raise ValueError("Wallet already exists for this user.")
             raise RuntimeError(f"Failed to create wallet: {e}")
 
@@ -26,9 +30,6 @@ class WalletRepo(Repository):
         """Retrieve the wallet for the user with the given user_id."""
         wallet = Wallet.objects.get(user_id=user_id)
         return wallet.pk
-
-
-
 
     def upsert_transaction(self, transaction: TransactionType) -> TransactionType:
         """Insert or update a transaction in the database."""
@@ -53,7 +54,7 @@ class WalletRepo(Repository):
                 defaults=defaults,
             )
         except Exception as e:
-            raise RuntimeError("Failed to upsert Transaction")
+            raise RuntimeError(f"Failed to upsert Transaction: {e}")
         return TransactionType(
             id=obj.pk,
             wallet_id=obj.wallet,
@@ -64,10 +65,8 @@ class WalletRepo(Repository):
             hash_card=obj.hash_card,
             ref_id=obj.ref_id,
             created_at=obj.created_at,
-            updated_at=obj.updated_at
+            updated_at=obj.updated_at,
         )
-
-
 
     def update_balance(self, wallet_id: int, amount: int) -> int:
         """Update the balance of the wallet with the given wallet_id."""
@@ -105,7 +104,7 @@ class WalletRepo(Repository):
                 hash_card=transaction.hash_card,
                 ref_id=transaction.ref_id,
                 created_at=transaction.created_at,
-                updated_at=transaction.updated_at
+                updated_at=transaction.updated_at,
             )
         except Transaction.DoesNotExist:
             raise ValueError(f"Transaction with authority {authority} does not exist.")
@@ -118,11 +117,16 @@ class WalletRepo(Repository):
         try:
             with transaction.atomic():
                 with connection.cursor() as cursor:
-                    cursor.execute("SELECT 1 FROM wallet WHERE wallet_id = %s FOR UPDATE NOWAIT", [wallet_id])
+                    cursor.execute(
+                        "SELECT 1 FROM wallet WHERE wallet_id = %s FOR UPDATE NOWAIT",
+                        [wallet_id],
+                    )
                     result = fun()
                     return result
         except Exception as e:
-            raise RuntimeError(f"Transaction lock failed for wallet_id {wallet_id}: {e}")
+            raise RuntimeError(
+                f"Transaction lock failed for wallet_id {wallet_id}: {e}"
+            )
 
     @staticmethod
     def review_transaction() -> None:
@@ -130,8 +134,7 @@ class WalletRepo(Repository):
         tow_elv_hour_ago = datetime.now() - timedelta(hours=12)
         try:
             Transaction.objects.filter(
-                state=TransactionState.PENDING,
-                created_at__lt=tow_elv_hour_ago
+                state=TransactionState.PENDING, created_at__lt=tow_elv_hour_ago
             ).update(state=TransactionState.CANCELLED)
         except Exception as e:
             print(f"Error reviewing transactions: {e}")

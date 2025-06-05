@@ -48,6 +48,7 @@ random_sample: Generates a random sample of elements from a list.
 """
 
 from datetime import datetime
+
 import factory
 from django.contrib.auth import get_user_model
 from faker import Faker
@@ -65,7 +66,6 @@ from ecommerce.apps.product.models import (
     ProductType,
 )
 
-
 User = get_user_model()
 fake = Faker("fa_IR")
 
@@ -75,6 +75,7 @@ class UserFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = User
 
+    id = factory.Sequence(lambda n: n + 1)
     id = factory.Sequence(lambda n: n + 1)
     is_superuser = False
     is_staff = False
@@ -114,7 +115,7 @@ class ProductTypeFactory(factory.django.DjangoModelFactory):
 
     id = factory.Sequence(lambda n: n + 1)
 
-    name = factory.Sequence(lambda n: f"type-{n+1}")
+    name = factory.Sequence(lambda n: f"type-{n + 1}")
 
 
 @register
@@ -160,9 +161,9 @@ class ProductFactory(factory.django.DjangoModelFactory):
         skip_postgeneration_save = True
 
     id = factory.Sequence(lambda n: n + 1)
-    web_id = factory.Sequence(lambda n: f"{n+2}")
+    web_id = factory.Sequence(lambda n: f"{n + 2}")
     slug = factory.Faker("slug")
-    name = factory.Sequence(lambda n: f"product-{n+1}")
+    name = factory.Sequence(lambda n: f"product-{n + 1}")
     description = factory.Faker("text")
     is_active = True
 
@@ -184,8 +185,8 @@ class ProductInventoryFactory(factory.django.DjangoModelFactory):
         model = ProductInventory
 
     id = factory.Sequence(lambda n: n + 1)
-    sku = factory.Sequence(lambda n: f"SKU-{n+1}")
-    upc = factory.Sequence(lambda n: f"UPC-{n+1}")
+    sku = factory.Sequence(lambda n: f"SKU-{n + 1}")
+    upc = factory.Sequence(lambda n: f"UPC-{n + 1}")
 
     product_type = factory.SubFactory(ProductTypeFactory)
     brand = factory.SubFactory(BrandFactory)

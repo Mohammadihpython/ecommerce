@@ -1,8 +1,8 @@
-
-
-from typing import Optional
-from pydantic import BaseModel,ConfigDict
 from datetime import datetime
+from typing import Optional
+
+from pydantic import BaseModel, ConfigDict
+
 from ecommerce.apps.wallet.types import TransactionState
 
 
@@ -22,43 +22,50 @@ class EntityModel(BaseModel):
     def json(self, *args, **kwargs):
         kwargs.setdefault("exclude_unset", True)
         return super().model_dump_json(*args, **kwargs)
+
+
 class CreateWalletRequest(EntityModel):
     user_id: int
 
 
 class CreateWalletResponse(EntityModel):
     user_id: int
-    wallet_id : int
+    wallet_id: int
+
 
 class PaymentRequest(EntityModel):
-    user_id:int
+    user_id: int
     amount: int
     IPG: str
+
+
 # internal payment gateway == ipg
 class CreatePaymentRequest(EntityModel):
-    wallet_id : int
+    wallet_id: int
     amount: int
-    ipg : str
+    ipg: str
+
 
 class CreatePaymentResponse(EntityModel):
-    wallet_id : int
+    wallet_id: int
     amount: int
     payment_url: str
     authority: str
 
+
 class CallbackRequest(EntityModel):
     ipg_key: str
     authority: str
-    status:str
+    status: str
 
 
 class CallbackResponse(BaseModel):
-    amount: Optional[int]=None
+    amount: int | None = None
     state: TransactionState
-    ref_id: Optional[int]=None
-    card_pan: Optional[str]=None
-    hash_card: Optional[str]=None
-    processed_at: Optional[datetime]=None
+    ref_id: int | None = None
+    card_pan: str | None = None
+    hash_card: str | None = None
+    processed_at: datetime | None = None
 
     class Config:
         exclude_none = True

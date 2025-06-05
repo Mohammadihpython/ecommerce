@@ -279,8 +279,8 @@ class ProductInventory(models.Model):
         blank=False,
         verbose_name=_("sale price"),
         help_text=_("format: maximum price 999.99"),
-        error_messages= {
-                "max_length": _("the price must be between 0 and 999.99."),
+        error_messages={
+            "max_length": _("the price must be between 0 and 999.99."),
         },
     )
     weight = models.FloatField(

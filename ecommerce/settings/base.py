@@ -1,8 +1,9 @@
-from datetime import timedelta
 import os
+from datetime import timedelta
 from pathlib import Path
 
 import environ
+
 env = environ.Env()
 
 
@@ -13,9 +14,9 @@ environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
 
 # Load each .env file manually
 env_files = [
-    BASE_DIR / '.envs' / '.local' / '.django',
-    BASE_DIR / '.envs' /'.local' / '.postgres',
-    BASE_DIR / '.envs' / '.local' / '.celery',  # optional
+    BASE_DIR / ".envs" / ".local" / ".django",
+    BASE_DIR / ".envs" / ".local" / ".postgres",
+    BASE_DIR / ".envs" / ".local" / ".celery",  # optional
 ]
 
 for file_path in env_files:

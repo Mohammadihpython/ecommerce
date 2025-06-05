@@ -5,7 +5,7 @@ DJANGO_SETTINGS_MODULE=ecommerce.settings.production
 DJANGO_SECRET_KEY=bVFNcRKNs3ShB4k0JgcrNr3W5qsx8DGa0UTCC8xiQaMNS2ihNZt38mru8PuLsf0a
 DJANGO_ADMIN_URL=admin/
 DJANGO_ALLOWED_HOSTS=.example.com
-
+ELASTICSEARCH_HOST_NAME=es
 # Security
 # ------------------------------------------------------------------------------
 # TIP: better off using DNS, however, redirect is OK too
