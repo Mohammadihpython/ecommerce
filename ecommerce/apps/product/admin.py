@@ -64,7 +64,6 @@ class ProductInventoryAdmin(admin.ModelAdmin):
         "created_at",
         "updated_at",
     )
-    filter_horizontal = ("attribute_values",)
 
 
 @admin.register(Media)

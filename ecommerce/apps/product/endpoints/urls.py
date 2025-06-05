@@ -17,7 +17,7 @@ router.register(r"product-attribute-values", views.ProductAttributeValueViewSet)
 router.register(r"product-type", views.ProductTypeViewsets)
 router.register(r"product-attribute-values", views.ProductAttributeValuesViewSets)
 router.register(r"product-type-attributes", views.ProductTypeAttributeViewSets)
-router.register(r"inventory-product-detail", views.InventoryProductDetailViewSet)
+# router.register(r"inventory-product-detail", views.ProductDetailViewSet)
 router.register(r"all-products", views.AllProductViewSet, basename="all-products")
 router.register(
     r"inventory-products-by-productID",

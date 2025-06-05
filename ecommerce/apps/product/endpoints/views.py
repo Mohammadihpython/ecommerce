@@ -189,7 +189,7 @@ class ProductTypeAttributeViewSets(viewsets.ModelViewSet):
     serializer_class = ProductTypeAttributeSerializer
 
 
-class InventoryProductDetailViewSet(mixins.RetrieveModelMixin, viewsets.GenericViewSet):
+class ProductDetailViewSet(mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     queryset = ProductInventory.objects.select_related(
         "product_inventory"
     ).prefetch_related("media_product_inventory")

@@ -1,22 +1,23 @@
 
 # Django
-django==4.2.7
-django-environ==0.11.2
-django-mptt==0.15.0
+django
+django-environ
+django-mptt
 
-psycopg2-binary==2.9.9
+psycopg2-binary
 
 # third party libraries
-django-redis==5.4.0
-django-celery-beat==2.5.0
-django-celery-results==2.5.1
-celery==5.3.6
-Pillow==10.1.0
-elasticsearch-dsl==8.11.0
-django-elasticsearch-dsl==8.0
+django-redis
+django-celery-beat
+django-celery-results
+celery
+Pillow
+elasticsearch-dsl
+django-elasticsearch-dsl
+pydantic
 # Django REST Framework
-djangorestframework==3.14.0
-django-cors-headers==4.3.0
-djangorestframework_simplejwt==5.3.0
+djangorestframework
+django-cors-headers
+djangorestframework_simplejwt
 # DRF-spectacular for api documentation
-drf-spectacular==0.26.5  # https://github.com/tfranzel/drf-spectacular
+drf-spectacular  # https://github.com/tfranzel/drf-spectacular

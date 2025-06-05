@@ -1,7 +1,8 @@
 import abc
 
 from elasticsearch import Elasticsearch
-from elasticsearch_dsl import Q
+
+from elasticsearch.dsl import Q
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.views import APIView
 

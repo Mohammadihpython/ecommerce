@@ -1,9 +1,8 @@
+from datetime import timedelta
 import os
 from pathlib import Path
 
 import environ
-from django.utils.timezone import timedelta
-
 env = environ.Env()
 
 
@@ -11,6 +10,17 @@ env = environ.Env()
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
+
+# Load each .env file manually
+env_files = [
+    BASE_DIR / '.envs' / '.local' / '.django',
+    BASE_DIR / '.envs' /'.local' / '.postgres',
+    BASE_DIR / '.envs' / '.local' / '.celery',  # optional
+]
+
+for file_path in env_files:
+    if file_path.exists():
+        environ.Env.read_env(str(file_path))
 
 APPS_DIR = BASE_DIR / "ecommerce"
 # Quick-start development settings - unsuitable for production
@@ -55,6 +65,7 @@ LOCAL_APPS = [
     "ecommerce.apps.product",
     "ecommerce.apps.search",
     "ecommerce.apps.cart",
+    "ecommerce.apps.wallet",
 ]
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
 

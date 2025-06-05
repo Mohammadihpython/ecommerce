@@ -1,0 +1,20 @@
+{
+    "typeCheckingMode": "basic", // or "strict" if you're confident
+    "pythonVersion": "3.11",
+    "pythonPlatform": "Linux",
+    "include": [
+        "."
+    ],
+    "exclude": [
+        "**/migrations",
+        "**/__pycache__"
+    ],
+    "reportMissingTypeStubs": false,
+    "reportMissingImports": false,
+    "reportUnknownMemberType": false,
+    "reportUnknownVariableType": false,
+    "reportUnknownArgumentType": false,
+    "reportUnknownParameterType": false,
+    "reportOptionalMemberAccess": false,
+    "useLibraryCodeForTypes": true
+}

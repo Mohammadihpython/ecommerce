@@ -276,6 +276,6 @@ delivery_system/media/
 
 .pytest_cache/
 .ipython/
-.env
+images/.env
 .envs/*
 !.envs/.local/
