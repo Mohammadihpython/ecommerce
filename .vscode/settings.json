@@ -1,8 +1,0 @@
-{
-    "python.formatting.provider": "black",
-    "python.testing.pytestArgs": [
-        "ecommerce"
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
-}
