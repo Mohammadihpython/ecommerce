@@ -1,0 +1,8773 @@
+[
+    {
+        "model": "product.brand",
+        "id": "1",
+        "fields": {
+            "name": "361"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "2",
+        "fields": {
+            "name": "143 girl"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "3",
+        "fields": {
+            "name": "143 gir"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "4",
+        "fields": {
+            "name": "2 lips too"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "5",
+        "fields": {
+            "name": "79 scii"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "6",
+        "fields": {
+            "name": "9 degree by refex"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "7",
+        "fields": {
+            "name": "a.n.a"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "8",
+        "fields": {
+            "name": "a.x.n.y."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "9",
+        "fields": {
+            "name": "a2 by aerosoes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "10",
+        "fields": {
+            "name": "abound"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "11",
+        "fields": {
+            "name": "acacia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "12",
+        "fields": {
+            "name": "academie gear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "13",
+        "fields": {
+            "name": "acorn"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "14",
+        "fields": {
+            "name": "adam tucker"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "15",
+        "fields": {
+            "name": "adi"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "16",
+        "fields": {
+            "name": "adidas"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "17",
+        "fields": {
+            "name": "adidas outdoor"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "18",
+        "fields": {
+            "name": "adieu"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "19",
+        "fields": {
+            "name": "adriana"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "20",
+        "fields": {
+            "name": "adriana york"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "21",
+        "fields": {
+            "name": "adrienne vittadini"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "22",
+        "fields": {
+            "name": "adtec"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "23",
+        "fields": {
+            "name": "aeropostae"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "24",
+        "fields": {
+            "name": "aerosoes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "25",
+        "fields": {
+            "name": "agl"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "26",
+        "fields": {
+            "name": "ahnu"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "27",
+        "fields": {
+            "name": "aberto fermini"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "28",
+        "fields": {
+            "name": "ado"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "29",
+        "fields": {
+            "name": "aegria"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "30",
+        "fields": {
+            "name": "aexander mcqueen"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "31",
+        "fields": {
+            "name": "aexander mcqueen by puma"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "32",
+        "fields": {
+            "name": "aexander wang"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "33",
+        "fields": {
+            "name": "aexandre birman"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "34",
+        "fields": {
+            "name": "afani"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "35",
+        "fields": {
+            "name": "aice \u0026 oivia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "36",
+        "fields": {
+            "name": "a "
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "37",
+        "fields": {
+            "name": "aegra k"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "38",
+        "fields": {
+            "name": "ama danza x3 series"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "39",
+        "fields": {
+            "name": "apine"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "40",
+        "fields": {
+            "name": "apine swiss"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "41",
+        "fields": {
+            "name": "atra footwear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "42",
+        "fields": {
+            "name": "amalfi by rangoni"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "43",
+        "fields": {
+            "name": "amafi by rangoni"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "44",
+        "fields": {
+            "name": "american eage"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "45",
+        "fields": {
+            "name": "american rag"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "46",
+        "fields": {
+            "name": "ami"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "47",
+        "fields": {
+            "name": "amoonyfashion"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "48",
+        "fields": {
+            "name": "anarchic by t.u.k."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "49",
+        "fields": {
+            "name": "andre assous"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "50",
+        "fields": {
+            "name": "andrew geer"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "51",
+        "fields": {
+            "name": "andrew stevens"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "52",
+        "fields": {
+            "name": "ann creek"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "53",
+        "fields": {
+            "name": "ann marino"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "54",
+        "fields": {
+            "name": "anna"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "55",
+        "fields": {
+            "name": "anne klein"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "56",
+        "fields": {
+            "name": "anne klein ak"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "57",
+        "fields": {
+            "name": "anne klein sport"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "58",
+        "fields": {
+            "name": "anne michee"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "59",
+        "fields": {
+            "name": "annie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "60",
+        "fields": {
+            "name": "annie shoes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "61",
+        "fields": {
+            "name": "anteope"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "62",
+        "fields": {
+            "name": "antigravity by easy spirit"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "63",
+        "fields": {
+            "name": "antonio meani"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "64",
+        "fields": {
+            "name": "anyi lu"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "65",
+        "fields": {
+            "name": "anywear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "66",
+        "fields": {
+            "name": "apex"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "67",
+        "fields": {
+            "name": "aquataia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "68",
+        "fields": {
+            "name": "ara"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "69",
+        "fields": {
+            "name": "aravon"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "70",
+        "fields": {
+            "name": "arche"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "71",
+        "fields": {
+            "name": "arcopedico"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "72",
+        "fields": {
+            "name": "ariat"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "73",
+        "fields": {
+            "name": "arider"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "74",
+        "fields": {
+            "name": "arizona jean company"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "75",
+        "fields": {
+            "name": "array"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "76",
+        "fields": {
+            "name": "arturo chiang"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "77",
+        "fields": {
+            "name": "as by ksc"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "78",
+        "fields": {
+            "name": "ash"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "79",
+        "fields": {
+            "name": "ashko"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "80",
+        "fields": {
+            "name": "asics"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "81",
+        "fields": {
+            "name": "athena"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "82",
+        "fields": {
+            "name": "athena aexander"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "83",
+        "fields": {
+            "name": "athetech"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "84",
+        "fields": {
+            "name": "attention"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "85",
+        "fields": {
+            "name": "auditions"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "86",
+        "fields": {
+            "name": "audrey brooke"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "87",
+        "fields": {
+            "name": "austraia luxe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "88",
+        "fields": {
+            "name": "avanti"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "89",
+        "fields": {
+            "name": "avia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "90",
+        "fields": {
+            "name": "avon"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "91",
+        "fields": {
+            "name": "axxiom"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "92",
+        "fields": {
+            "name": "azura"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "93",
+        "fields": {
+            "name": "b. makowsky"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "94",
+        "fields": {
+            "name": "b.o.c"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "95",
+        "fields": {
+            "name": "b.o.c."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "96",
+        "fields": {
+            "name": "babe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "97",
+        "fields": {
+            "name": "babe."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "98",
+        "fields": {
+            "name": "baboat"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "99",
+        "fields": {
+            "name": "badgey mischka"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "100",
+        "fields": {
+            "name": "baffin"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "101",
+        "fields": {
+            "name": "baenciaga"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "102",
+        "fields": {
+            "name": "ballasox"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "103",
+        "fields": {
+            "name": "bamboo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "104",
+        "fields": {
+            "name": "bamboo54"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "105",
+        "fields": {
+            "name": "bandoino"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "106",
+        "fields": {
+            "name": "bar iii"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "107",
+        "fields": {
+            "name": "bare traps"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "108",
+        "fields": {
+            "name": "barefooters"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "109",
+        "fields": {
+            "name": "baretraps"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "110",
+        "fields": {
+            "name": "basic editions"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "111",
+        "fields": {
+            "name": "baske caifornia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "112",
+        "fields": {
+            "name": "bc"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "113",
+        "fields": {
+            "name": "bc footwear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "114",
+        "fields": {
+            "name": "bcbg"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "115",
+        "fields": {
+            "name": "bcbg max azria"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "116",
+        "fields": {
+            "name": "bcbg paris"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "117",
+        "fields": {
+            "name": "bcbgeneraltion"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "118",
+        "fields": {
+            "name": "be comfortabe by bondo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "119",
+        "fields": {
+            "name": "beacon"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "120",
+        "fields": {
+            "name": "beacon shoes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "121",
+        "fields": {
+            "name": "bearpaw"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "122",
+        "fields": {
+            "name": "beautifee"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "123",
+        "fields": {
+            "name": "beautifeet"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "124",
+        "fields": {
+            "name": "bebe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "125",
+        "fields": {
+            "name": "bebe sport"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "126",
+        "fields": {
+            "name": "bed stu"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "127",
+        "fields": {
+            "name": "bedroom athetics"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "128",
+        "fields": {
+            "name": "bea marie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "129",
+        "fields": {
+            "name": "bella marie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "130",
+        "fields": {
+            "name": "bea vita"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "131",
+        "fields": {
+            "name": "bella vita"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "132",
+        "fields": {
+            "name": "belle by sigerson morrison"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "133",
+        "fields": {
+            "name": "bee sigerson morrison"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "134",
+        "fields": {
+            "name": "beini"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "135",
+        "fields": {
+            "name": "benjamin adams london"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "136",
+        "fields": {
+            "name": "benjamin wak"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "137",
+        "fields": {
+            "name": "berkemann"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "138",
+        "fields": {
+            "name": "bernardo footwear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "139",
+        "fields": {
+            "name": "bernie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "140",
+        "fields": {
+            "name": "bernie mev"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "141",
+        "fields": {
+            "name": "bernie mev."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "142",
+        "fields": {
+            "name": "beston"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "143",
+        "fields": {
+            "name": "betani"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "144",
+        "fields": {
+            "name": "bettie page"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "145",
+        "fields": {
+            "name": "betty boop signature product"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "146",
+        "fields": {
+            "name": "bettye by bettye muller"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "147",
+        "fields": {
+            "name": "bettye muer"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "148",
+        "fields": {
+            "name": "betua"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "149",
+        "fields": {
+            "name": "big buddha"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "150",
+        "fields": {
+            "name": "biabong"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "151",
+        "fields": {
+            "name": "bioword"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "152",
+        "fields": {
+            "name": "bioworld"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "153",
+        "fields": {
+            "name": "birkenstock"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "154",
+        "fields": {
+            "name": "birkis"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "155",
+        "fields": {
+            "name": "bite"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "156",
+        "fields": {
+            "name": "bk"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "157",
+        "fields": {
+            "name": "bl"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "158",
+        "fields": {
+            "name": "bancho bedding"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "159",
+        "fields": {
+            "name": "bazin roxx"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "160",
+        "fields": {
+            "name": "boch"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "161",
+        "fields": {
+            "name": "bondo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "162",
+        "fields": {
+            "name": "bowfish"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "163",
+        "fields": {
+            "name": "tongue"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "164",
+        "fields": {
+            "name": "bundstone"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "165",
+        "fields": {
+            "name": "bushe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "166",
+        "fields": {
+            "name": "bobs by skechers"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "167",
+        "fields": {
+            "name": "bogner fire + ice"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "168",
+        "fields": {
+            "name": "bogs"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "169",
+        "fields": {
+            "name": "bokos"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "170",
+        "fields": {
+            "name": "bongo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "171",
+        "fields": {
+            "name": "bonnibe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "172",
+        "fields": {
+            "name": "booroo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "173",
+        "fields": {
+            "name": "bootsitootsi"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "174",
+        "fields": {
+            "name": "bordeo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "175",
+        "fields": {
+            "name": "borea"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "176",
+        "fields": {
+            "name": "born"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "177",
+        "fields": {
+            "name": "born to accessorize"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "178",
+        "fields": {
+            "name": "bouet"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "179",
+        "fields": {
+            "name": "boutique 58"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "180",
+        "fields": {
+            "name": "boutique 9"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "181",
+        "fields": {
+            "name": "bp."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "182",
+        "fields": {
+            "name": "brahma"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "183",
+        "fields": {
+            "name": "breckees"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "184",
+        "fields": {
+            "name": "brianna leigh"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "185",
+        "fields": {
+            "name": "briney co."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "186",
+        "fields": {
+            "name": "britche"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "187",
+        "fields": {
+            "name": "bronx"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "188",
+        "fields": {
+            "name": "brooks"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "189",
+        "fields": {
+            "name": "bruno magi"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "190",
+        "fields": {
+            "name": "bsi"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "191",
+        "fields": {
+            "name": "bucco capensis"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "192",
+        "fields": {
+            "name": "buk buys"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "193",
+        "fields": {
+            "name": "buova"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "194",
+        "fields": {
+            "name": "bumper"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "195",
+        "fields": {
+            "name": "burberry"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "196",
+        "fields": {
+            "name": "burnetie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "197",
+        "fields": {
+            "name": "burton"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "198",
+        "fields": {
+            "name": "bussoa stye"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "199",
+        "fields": {
+            "name": "butterfy twists"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "200",
+        "fields": {
+            "name": "buyenarge"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "201",
+        "fields": {
+            "name": "bzees"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "202",
+        "fields": {
+            "name": "c labe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "203",
+        "fields": {
+            "name": "c label"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "204",
+        "fields": {
+            "name": "ccinzia araia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "205",
+        "fields": {
+            "name": "caifornia costume"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "206",
+        "fields": {
+            "name": "ca it spring"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "207",
+        "fields": {
+            "name": "caaway"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "208",
+        "fields": {
+            "name": "caaway footwear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "209",
+        "fields": {
+            "name": "caisto"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "210",
+        "fields": {
+            "name": "cavin klein"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "211",
+        "fields": {
+            "name": "cavin klein ck"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "212",
+        "fields": {
+            "name": "cavin klein jeans"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "213",
+        "fields": {
+            "name": "camper together"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "214",
+        "fields": {
+            "name": "canyon river s"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "215",
+        "fields": {
+            "name": "caparros"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "216",
+        "fields": {
+            "name": "cape robbin"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "217",
+        "fields": {
+            "name": "capei"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "218",
+        "fields": {
+            "name": "capezio"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "219",
+        "fields": {
+            "name": "caressa"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "220",
+        "fields": {
+            "name": "carhartt"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "221",
+        "fields": {
+            "name": "caros by caros santana"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "222",
+        "fields": {
+            "name": "caros santana"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "223",
+        "fields": {
+            "name": "caroe hochman"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "224",
+        "fields": {
+            "name": "caroinna espinosa"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "225",
+        "fields": {
+            "name": "carrano"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "226",
+        "fields": {
+            "name": "carrini"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "227",
+        "fields": {
+            "name": "cat"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "228",
+        "fields": {
+            "name": "caterpiar"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "229",
+        "fields": {
+            "name": "ccilu"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "230",
+        "fields": {
+            "name": "ceciia undercover"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "231",
+        "fields": {
+            "name": "ceebrity "
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "232",
+        "fields": {
+            "name": "ceeste"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "233",
+        "fields": {
+            "name": "cesare paciotti"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "234",
+        "fields": {
+            "name": "cfd"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "235",
+        "fields": {
+            "name": "chaco"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "236",
+        "fields": {
+            "name": "chaps"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "237",
+        "fields": {
+            "name": "charades"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "238",
+        "fields": {
+            "name": "chares abert"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "239",
+        "fields": {
+            "name": "chares by chares david"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "240",
+        "fields": {
+            "name": "chares david"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "241",
+        "fields": {
+            "name": "charotte oympia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "242",
+        "fields": {
+            "name": "chary amar"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "243",
+        "fields": {
+            "name": "charter cub"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "244",
+        "fields": {
+            "name": "chase \u0026 choe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "245",
+        "fields": {
+            "name": "chass"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "246",
+        "fields": {
+            "name": "cheeks"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "247",
+        "fields": {
+            "name": "chesea \u0026 zoe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "248",
+        "fields": {
+            "name": "chesea crew"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "249",
+        "fields": {
+            "name": "chie mihara"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "250",
+        "fields": {
+            "name": "chinese laundry"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "251",
+        "fields": {
+            "name": "choe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "252",
+        "fields": {
+            "name": "christian louboutin"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "253",
+        "fields": {
+            "name": "circa joan \u0026 david"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "254",
+        "fields": {
+            "name": "circus by sam edeman"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "255",
+        "fields": {
+            "name": "city cassified"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "256",
+        "fields": {
+            "name": "citycassified"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "257",
+        "fields": {
+            "name": "cl by laundry"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "258",
+        "fields": {
+            "name": "carisse"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "259",
+        "fields": {
+            "name": "carks"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "260",
+        "fields": {
+            "name": "carks artisan"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "261",
+        "fields": {
+            "name": "carks artisan coection"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "262",
+        "fields": {
+            "name": "carks coection"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "263",
+        "fields": {
+            "name": "cassique"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "264",
+        "fields": {
+            "name": "ceopatra"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "265",
+        "fields": {
+            "name": "ciffs by mountain"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "266",
+        "fields": {
+            "name": "coach"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "267",
+        "fields": {
+            "name": "cobb hi"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "268",
+        "fields": {
+            "name": "cobb hi by baance"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "269",
+        "fields": {
+            "name": "cobb hill by balance"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "270",
+        "fields": {
+            "name": "cobian"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "271",
+        "fields": {
+            "name": "coclico"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "272",
+        "fields": {
+            "name": "coconuts by matisse"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "273",
+        "fields": {
+            "name": "cod front"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "274",
+        "fields": {
+            "name": "coe haan"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "275",
+        "fields": {
+            "name": "coegiate surf \u0026 sport"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "276",
+        "fields": {
+            "name": "cooni"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "277",
+        "fields": {
+            "name": "coorfu creations"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "278",
+        "fields": {
+            "name": "cooriffics"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "279",
+        "fields": {
+            "name": "coumbia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "280",
+        "fields": {
+            "name": "columbia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "281",
+        "fields": {
+            "name": "comfort ease"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "282",
+        "fields": {
+            "name": "comfort pus by predictions"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "283",
+        "fields": {
+            "name": "comfy feet"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "284",
+        "fields": {
+            "name": "converse"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "285",
+        "fields": {
+            "name": "corkys"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "286",
+        "fields": {
+            "name": "corkys footwear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "287",
+        "fields": {
+            "name": "corkys footwear inc."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "288",
+        "fields": {
+            "name": "corra"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "289",
+        "fields": {
+            "name": "corso como"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "290",
+        "fields": {
+            "name": "costumefit"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "291",
+        "fields": {
+            "name": "cougar"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "292",
+        "fields": {
+            "name": "covington"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "293",
+        "fields": {
+            "name": "cr"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "294",
+        "fields": {
+            "name": "crazy slippers"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "295",
+        "fields": {
+            "name": "crocs"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "296",
+        "fields": {
+            "name": "croft \u0026 barrow"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "297",
+        "fields": {
+            "name": "crysta case"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "298",
+        "fields": {
+            "name": "ctm"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "299",
+        "fields": {
+            "name": "cudas"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "300",
+        "fields": {
+            "name": "cushe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "301",
+        "fields": {
+            "name": "cvs"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "302",
+        "fields": {
+            "name": "cynthia rowey"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "303",
+        "fields": {
+            "name": "daiyshoes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "304",
+        "fields": {
+            "name": "dan post"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "305",
+        "fields": {
+            "name": "dana davis"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "306",
+        "fields": {
+            "name": "dance cass"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "307",
+        "fields": {
+            "name": "dancenwear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "308",
+        "fields": {
+            "name": "danie green"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "309",
+        "fields": {
+            "name": "danner"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "310",
+        "fields": {
+            "name": "danshuz"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "311",
+        "fields": {
+            "name": "danskin now"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "312",
+        "fields": {
+            "name": "dansko"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "313",
+        "fields": {
+            "name": "david tate"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "314",
+        "fields": {
+            "name": "dawgs"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "315",
+        "fields": {
+            "name": "dbdk fashion"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "316",
+        "fields": {
+            "name": "dc comics"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "317",
+        "fields": {
+            "name": "dd"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "318",
+        "fields": {
+            "name": "ddi"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "319",
+        "fields": {
+            "name": "de bossom coection"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "320",
+        "fields": {
+            "name": "de blossom collection"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "321",
+        "fields": {
+            "name": "dearfoams"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "322",
+        "fields": {
+            "name": "dearfoams - rg barry corp."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "323",
+        "fields": {
+            "name": "dearforms"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "324",
+        "fields": {
+            "name": "deicious"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "325",
+        "fields": {
+            "name": "deman"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "326",
+        "fields": {
+            "name": "delman"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "327",
+        "fields": {
+            "name": "deuxe comfort"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "328",
+        "fields": {
+            "name": "demonia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "329",
+        "fields": {
+            "name": "derek lam"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "330",
+        "fields": {
+            "name": "derek lam 1 crosby"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "331",
+        "fields": {
+            "name": "desigua"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "332",
+        "fields": {
+            "name": "devious"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "333",
+        "fields": {
+            "name": "dexter"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "334",
+        "fields": {
+            "name": "df by dearfoams"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "335",
+        "fields": {
+            "name": "dg hi"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "336",
+        "fields": {
+            "name": "diamondback"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "337",
+        "fields": {
+            "name": "diane von furstenberg"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "338",
+        "fields": {
+            "name": "diba"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "339",
+        "fields": {
+            "name": "diba true"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "340",
+        "fields": {
+            "name": "diba.true"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "341",
+        "fields": {
+            "name": "diehard"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "342",
+        "fields": {
+            "name": "diese"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "343",
+        "fields": {
+            "name": "dije caifornia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "344",
+        "fields": {
+            "name": "dimecity"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "345",
+        "fields": {
+            "name": "dingo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "346",
+        "fields": {
+            "name": "dirty laundry"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "347",
+        "fields": {
+            "name": "disguise costumes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "348",
+        "fields": {
+            "name": "disney"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "349",
+        "fields": {
+            "name": "dizzy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "350",
+        "fields": {
+            "name": "dkny"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "351",
+        "fields": {
+            "name": "doce \u0026 gabbana"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "352",
+        "fields": {
+            "name": "doce by mojo moxy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "353",
+        "fields": {
+            "name": "dolce by mojo moxy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "354",
+        "fields": {
+            "name": "doce vita"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "355",
+        "fields": {
+            "name": "doce\u0026gabbana"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "356",
+        "fields": {
+            "name": "dohouse"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "357",
+        "fields": {
+            "name": "domba"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "358",
+        "fields": {
+            "name": "donad j piner"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "359",
+        "fields": {
+            "name": "dr schos"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "360",
+        "fields": {
+            "name": "dr. comfort"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "361",
+        "fields": {
+            "name": "dr. martens"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "362",
+        "fields": {
+            "name": "dr. martens air wair"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "363",
+        "fields": {
+            "name": "dr. schos"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "364",
+        "fields": {
+            "name": "dr. wei"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "365",
+        "fields": {
+            "name": "dream out loud by seena gomez"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "366",
+        "fields": {
+            "name": "drew"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "367",
+        "fields": {
+            "name": "drew shoe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "368",
+        "fields": {
+            "name": "dromedaris"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "369",
+        "fields": {
+            "name": "dsol basic"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "370",
+        "fields": {
+            "name": "dune london"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "371",
+        "fields": {
+            "name": "dunhu"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "372",
+        "fields": {
+            "name": "durango"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "373",
+        "fields": {
+            "name": "dv by doce vita"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "374",
+        "fields": {
+            "name": "dv8 by doce vita"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "375",
+        "fields": {
+            "name": "dyeabes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "376",
+        "fields": {
+            "name": "e! live from the red carpet"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "377",
+        "fields": {
+            "name": "earth"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "378",
+        "fields": {
+            "name": "earth origins"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "379",
+        "fields": {
+            "name": "earth spirit"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "380",
+        "fields": {
+            "name": "east 5th"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "381",
+        "fields": {
+            "name": "eastand"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "382",
+        "fields": {
+            "name": "eastory"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "383",
+        "fields": {
+            "name": "easy spirit"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "384",
+        "fields": {
+            "name": "easy spirit e36"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "385",
+        "fields": {
+            "name": "easy street"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "386",
+        "fields": {
+            "name": "easy usa"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "387",
+        "fields": {
+            "name": "easycomforts"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "388",
+        "fields": {
+            "name": "ecco"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "389",
+        "fields": {
+            "name": "ed een degeneres"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "390",
+        "fields": {
+            "name": "ed hardy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "391",
+        "fields": {
+            "name": "eight second ange"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "392",
+        "fields": {
+            "name": "eighty4"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "393",
+        "fields": {
+            "name": "eieen fisher"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "394",
+        "fields": {
+            "name": "e naturaista"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "395",
+        "fields": {
+            "name": "eectric karma"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "396",
+        "fields": {
+            "name": "eie tahari"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "397",
+        "fields": {
+            "name": "eites"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "398",
+        "fields": {
+            "name": "eites by waking crades"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "399",
+        "fields": {
+            "name": "eizabeth and james"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "400",
+        "fields": {
+            "name": "een tracy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "401",
+        "fields": {
+            "name": "ellen tracy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "402",
+        "fields": {
+            "name": "eie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "403",
+        "fields": {
+            "name": "ellie shoes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "404",
+        "fields": {
+            "name": "eie shoes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "405",
+        "fields": {
+            "name": "eiott lucca"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "406",
+        "fields": {
+            "name": "emozioni"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "407",
+        "fields": {
+            "name": "emporio armani"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "408",
+        "fields": {
+            "name": "emu"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "409",
+        "fields": {
+            "name": "emu austraia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "410",
+        "fields": {
+            "name": "enimay"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "411",
+        "fields": {
+            "name": "enmayer"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "412",
+        "fields": {
+            "name": "enzo angioini"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "413",
+        "fields": {
+            "name": "eric michae"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "414",
+        "fields": {
+            "name": "eric michae oasabbia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "415",
+        "fields": {
+            "name": "esprit"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "416",
+        "fields": {
+            "name": "etienne aigner"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "417",
+        "fields": {
+            "name": "eurosoft by sofft"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "418",
+        "fields": {
+            "name": "evan picone"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "419",
+        "fields": {
+            "name": "everastreg"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "420",
+        "fields": {
+            "name": "everybody by bz moda"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "421",
+        "fields": {
+            "name": "evov"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "422",
+        "fields": {
+            "name": "exe by tsakiris mallas"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "423",
+        "fields": {
+            "name": "express"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "424",
+        "fields": {
+            "name": "extersteps"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "425",
+        "fields": {
+            "name": "fabrique"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "426",
+        "fields": {
+            "name": "fabuicious"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "427",
+        "fields": {
+            "name": "fabuous footwear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "428",
+        "fields": {
+            "name": "faded gory"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "429",
+        "fields": {
+            "name": "fahrenheit"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "430",
+        "fields": {
+            "name": "famous name brand"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "431",
+        "fields": {
+            "name": "fashion focus"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "432",
+        "fields": {
+            "name": "feiyue."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "433",
+        "fields": {
+            "name": "fendi"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "434",
+        "fields": {
+            "name": "fergaicious"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "435",
+        "fields": {
+            "name": "fergie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "436",
+        "fields": {
+            "name": "fergie footwear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "437",
+        "fields": {
+            "name": "ferragamo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "438",
+        "fields": {
+            "name": "ferrini"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "439",
+        "fields": {
+            "name": "ferriniusa"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "440",
+        "fields": {
+            "name": "ffc york"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "441",
+        "fields": {
+            "name": "fic"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "442",
+        "fields": {
+            "name": "fidji"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "443",
+        "fields": {
+            "name": "fiel"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "444",
+        "fields": {
+            "name": "fie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "445",
+        "fields": {
+            "name": "fia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "446",
+        "fields": {
+            "name": "finn comfort"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "447",
+        "fields": {
+            "name": "fiorentini + baker"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "448",
+        "fields": {
+            "name": "fireside casuals"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "449",
+        "fields": {
+            "name": "fit fop"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "450",
+        "fields": {
+            "name": "fitfop"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "451",
+        "fields": {
+            "name": "fitkicks"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "452",
+        "fields": {
+            "name": "fl"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "453",
+        "fields": {
+            "name": "fla orthopedics"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "454",
+        "fields": {
+            "name": "fexus by spring step"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "455",
+        "fields": {
+            "name": "fogg"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "456",
+        "fields": {
+            "name": "fojos"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "457",
+        "fields": {
+            "name": "fy london"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "458",
+        "fields": {
+            "name": "footjoy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "459",
+        "fields": {
+            "name": "footzyros"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "460",
+        "fields": {
+            "name": "forever"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "461",
+        "fields": {
+            "name": "forever coectibe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "462",
+        "fields": {
+            "name": "forever link"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "463",
+        "fields": {
+            "name": "fourever funky"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "464",
+        "fields": {
+            "name": "fox"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "465",
+        "fields": {
+            "name": "franco sarto"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "466",
+        "fields": {
+            "name": "fratei rossetti"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "467",
+        "fields": {
+            "name": "free peope"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "468",
+        "fields": {
+            "name": "freebird by steven"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "469",
+        "fields": {
+            "name": "french connection"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "470",
+        "fields": {
+            "name": "french soe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "471",
+        "fields": {
+            "name": "frye"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "472",
+        "fields": {
+            "name": "fsny"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "473",
+        "fields": {
+            "name": "funtasma"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "474",
+        "fields": {
+            "name": "funtasmpeaser"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "475",
+        "fields": {
+            "name": "fuzzy footies"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "476",
+        "fields": {
+            "name": "g antini"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "477",
+        "fields": {
+            "name": "g by guess"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "478",
+        "fields": {
+            "name": "g.c. shoes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "479",
+        "fields": {
+            "name": "g.h. bass \u0026 co."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "480",
+        "fields": {
+            "name": "g.i.l.i."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "481",
+        "fields": {
+            "name": "gabor"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "482",
+        "fields": {
+            "name": "gama studio"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "483",
+        "fields": {
+            "name": "gameday boots"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "484",
+        "fields": {
+            "name": "gc"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "485",
+        "fields": {
+            "name": "gc shoes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "486",
+        "fields": {
+            "name": "generic"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "487",
+        "fields": {
+            "name": "generic surpus"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "488",
+        "fields": {
+            "name": "gente sous"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "489",
+        "fields": {
+            "name": "genuine dickies"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "490",
+        "fields": {
+            "name": "genuine grip"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "491",
+        "fields": {
+            "name": "genuine grip footwear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "492",
+        "fields": {
+            "name": "george"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "493",
+        "fields": {
+            "name": "geox"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "494",
+        "fields": {
+            "name": "giamia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "495",
+        "fields": {
+            "name": "giani bernini"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "496",
+        "fields": {
+            "name": "giro"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "497",
+        "fields": {
+            "name": "giuseppe zanotti"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "498",
+        "fields": {
+            "name": "givenchy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "499",
+        "fields": {
+            "name": "geader"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "500",
+        "fields": {
+            "name": "gister"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "501",
+        "fields": {
+            "name": "go"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "502",
+        "fields": {
+            "name": "godinger"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "503",
+        "fields": {
+            "name": "goa"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "504",
+        "fields": {
+            "name": "god toe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "505",
+        "fields": {
+            "name": "goden goose"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "506",
+        "fields": {
+            "name": "golfstream"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "507",
+        "fields": {
+            "name": "gotta furt"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "508",
+        "fields": {
+            "name": "gourmet"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "509",
+        "fields": {
+            "name": "grasshoppers"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "510",
+        "fields": {
+            "name": "gravity defyer"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "511",
+        "fields": {
+            "name": "grazie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "512",
+        "fields": {
+            "name": "grendene"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "513",
+        "fields": {
+            "name": "groove"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "514",
+        "fields": {
+            "name": "gubize"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "515",
+        "fields": {
+            "name": "gucci"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "516",
+        "fields": {
+            "name": "guess"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "517",
+        "fields": {
+            "name": "gu shoes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "518",
+        "fields": {
+            "name": "guppy love"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "519",
+        "fields": {
+            "name": "gx by gwen stefani"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "520",
+        "fields": {
+            "name": "h by haston"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "521",
+        "fields": {
+            "name": "h by hudson"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "522",
+        "fields": {
+            "name": "hadari"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "523",
+        "fields": {
+            "name": "hades"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "524",
+        "fields": {
+            "name": "haflinger"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "525",
+        "fields": {
+            "name": "hafinger"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "526",
+        "fields": {
+            "name": "haiey jeans co."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "527",
+        "fields": {
+            "name": "haogen"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "528",
+        "fields": {
+            "name": "harey-davidson"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "529",
+        "fields": {
+            "name": "harry potter"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "530",
+        "fields": {
+            "name": "harve benard"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "531",
+        "fields": {
+            "name": "hatey"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "532",
+        "fields": {
+            "name": "havaianas"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "533",
+        "fields": {
+            "name": "heart sou"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "534",
+        "fields": {
+            "name": "heaveny comfort"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "535",
+        "fields": {
+            "name": "helle comfort"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "536",
+        "fields": {
+            "name": "hee comfort"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "537",
+        "fields": {
+            "name": "heo kitty"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "538",
+        "fields": {
+            "name": "hey hansen"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "539",
+        "fields": {
+            "name": "hemut lang"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "540",
+        "fields": {
+            "name": "henry ferrera coection"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "541",
+        "fields": {
+            "name": "henry ferrera york"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "542",
+        "fields": {
+            "name": "herve leger"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "543",
+        "fields": {
+            "name": "hinge"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "544",
+        "fields": {
+            "name": "hi-tec"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "545",
+        "fields": {
+            "name": "hogan"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "546",
+        "fields": {
+            "name": "hogan by tods"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "547",
+        "fields": {
+            "name": "hoka one one"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "548",
+        "fields": {
+            "name": "hortense b. hewitt"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "549",
+        "fields": {
+            "name": "hounds"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "550",
+        "fields": {
+            "name": "house of dereon"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "551",
+        "fields": {
+            "name": "house of harow 196"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "552",
+        "fields": {
+            "name": "hunter"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "553",
+        "fields": {
+            "name": "hush puppies"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "554",
+        "fields": {
+            "name": "hustler"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "555",
+        "fields": {
+            "name": "i heart collection"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "556",
+        "fields": {
+            "name": "ib eva slippers"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "557",
+        "fields": {
+            "name": "icebug"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "558",
+        "fields": {
+            "name": "ise jacobsen"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "559",
+        "fields": {
+            "name": "ise jacobsen hornbaek"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "560",
+        "fields": {
+            "name": "ilse jacobsen hornbaek"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "561",
+        "fields": {
+            "name": "im link"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "562",
+        "fields": {
+            "name": "iman"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "563",
+        "fields": {
+            "name": "impo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "564",
+        "fields": {
+            "name": "inc internationa concepts"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "565",
+        "fields": {
+            "name": "inc international concepts"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "566",
+        "fields": {
+            "name": "indian seections"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "567",
+        "fields": {
+            "name": "indigo rd."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "568",
+        "fields": {
+            "name": "infinity"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "569",
+        "fields": {
+            "name": "in-sattva"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "570",
+        "fields": {
+            "name": "intagia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "571",
+        "fields": {
+            "name": "intagia designs"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "572",
+        "fields": {
+            "name": "ipanema"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "573",
+        "fields": {
+            "name": "i-roc"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "574",
+        "fields": {
+            "name": "iron fist"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "575",
+        "fields": {
+            "name": "isaac mizrahi"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "576",
+        "fields": {
+            "name": "isotoner"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "577",
+        "fields": {
+            "name": "issac mizrahi"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "578",
+        "fields": {
+            "name": "is-shirey of hoywood"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "579",
+        "fields": {
+            "name": "italian comfort"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "580",
+        "fields": {
+            "name": "itaian shoe makers"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "581",
+        "fields": {
+            "name": "italian shoe makers"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "582",
+        "fields": {
+            "name": "itaian shoemakers"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "583",
+        "fields": {
+            "name": "ivanka trump"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "584",
+        "fields": {
+            "name": "ivy kirzhner"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "585",
+        "fields": {
+            "name": "j shoes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "586",
+        "fields": {
+            "name": "j. renee"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "587",
+        "fields": {
+            "name": "j.renee"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "588",
+        "fields": {
+            "name": "jsides"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "589",
+        "fields": {
+            "name": "j`s awake"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "590",
+        "fields": {
+            "name": "jack rogers"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "591",
+        "fields": {
+            "name": "jacobies"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "592",
+        "fields": {
+            "name": "jafa"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "593",
+        "fields": {
+            "name": "jambu"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "594",
+        "fields": {
+            "name": "jbu by jambu"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "595",
+        "fields": {
+            "name": "jc pay"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "596",
+        "fields": {
+            "name": "jeffrey campbell"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "597",
+        "fields": {
+            "name": "jeffrey campbe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "598",
+        "fields": {
+            "name": "jeypop"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "599",
+        "fields": {
+            "name": "jellypop"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "600",
+        "fields": {
+            "name": "jessica simpson"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "601",
+        "fields": {
+            "name": "jewesobsession"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "602",
+        "fields": {
+            "name": "jig foo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "603",
+        "fields": {
+            "name": "jimmy choo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "604",
+        "fields": {
+            "name": "jingxiguoji"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "605",
+        "fields": {
+            "name": "joan \u0026 david"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "606",
+        "fields": {
+            "name": "joe boxer"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "607",
+        "fields": {
+            "name": "joes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "608",
+        "fields": {
+            "name": "joes jeans"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "609",
+        "fields": {
+            "name": "johnathan kayne"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "610",
+        "fields": {
+            "name": "johnston \u0026 murphy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "611",
+        "fields": {
+            "name": "joie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "612",
+        "fields": {
+            "name": "jones york"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "613",
+        "fields": {
+            "name": "josef seibe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "614",
+        "fields": {
+            "name": "josef siebe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "615",
+        "fields": {
+            "name": "joseph griffin l.a. coection"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "616",
+        "fields": {
+            "name": "josmo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "617",
+        "fields": {
+            "name": "joues"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "618",
+        "fields": {
+            "name": "journee coection"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "619",
+        "fields": {
+            "name": "joy \u0026 mario"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "620",
+        "fields": {
+            "name": "judith"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "621",
+        "fields": {
+            "name": "judith ripka"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "622",
+        "fields": {
+            "name": "juicy couture"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "623",
+        "fields": {
+            "name": "jui"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "624",
+        "fields": {
+            "name": "junya watanabe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "625",
+        "fields": {
+            "name": "justin"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "626",
+        "fields": {
+            "name": "justin bair"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "627",
+        "fields": {
+            "name": "justin boots"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "628",
+        "fields": {
+            "name": "justin gypsy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "629",
+        "fields": {
+            "name": "k. be"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "630",
+        "fields": {
+            "name": "k. be socks"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "631",
+        "fields": {
+            "name": "k.jacques st. tropez"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "632",
+        "fields": {
+            "name": "kaso earth"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "633",
+        "fields": {
+            "name": "kamik"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "634",
+        "fields": {
+            "name": "karen scott"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "635",
+        "fields": {
+            "name": "kate spade"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "636",
+        "fields": {
+            "name": "kate spade york"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "637",
+        "fields": {
+            "name": "kd11"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "638",
+        "fields": {
+            "name": "keds"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "639",
+        "fields": {
+            "name": "keen"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "640",
+        "fields": {
+            "name": "key \u0026 katie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "641",
+        "fields": {
+            "name": "kesi dagger"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "642",
+        "fields": {
+            "name": "kelsi dagger"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "643",
+        "fields": {
+            "name": "kenda + kyie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "644",
+        "fields": {
+            "name": "kenneth coe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "645",
+        "fields": {
+            "name": "kenneth coe york"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "646",
+        "fields": {
+            "name": "kenneth coe ny"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "647",
+        "fields": {
+            "name": "kenneth coe reaction"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "648",
+        "fields": {
+            "name": "kenneth coe unisted"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "649",
+        "fields": {
+            "name": "kensie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "650",
+        "fields": {
+            "name": "keuka suregrip"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "651",
+        "fields": {
+            "name": "khombu"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "652",
+        "fields": {
+            "name": "kickers"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "653",
+        "fields": {
+            "name": "kim rogers"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "654",
+        "fields": {
+            "name": "kogs"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "655",
+        "fields": {
+            "name": "kub nico"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "656",
+        "fields": {
+            "name": "kodiak"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "657",
+        "fields": {
+            "name": "kooaburra"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "658",
+        "fields": {
+            "name": "kork-ease"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "659",
+        "fields": {
+            "name": "korks"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "660",
+        "fields": {
+            "name": "korks by kork-ease"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "661",
+        "fields": {
+            "name": "k-swiss"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "662",
+        "fields": {
+            "name": "l.a. beauty"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "663",
+        "fields": {
+            "name": "l.a.m.b."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "664",
+        "fields": {
+            "name": "l.k. bennett"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "665",
+        "fields": {
+            "name": "la banca"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "666",
+        "fields": {
+            "name": "la canadienne"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "667",
+        "fields": {
+            "name": "la gear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "668",
+        "fields": {
+            "name": "la pume"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "669",
+        "fields": {
+            "name": "la sportiva"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "670",
+        "fields": {
+            "name": "lacoste"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "671",
+        "fields": {
+            "name": "lacrosse"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "672",
+        "fields": {
+            "name": "lamo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "673",
+        "fields": {
+            "name": "lamo footwear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "674",
+        "fields": {
+            "name": "lamo sheepskin inc"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "675",
+        "fields": {
+            "name": "lamour des pieds"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "676",
+        "fields": {
+            "name": "landau"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "677",
+        "fields": {
+            "name": "lane boots"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "678",
+        "fields": {
+            "name": "lanvin"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "679",
+        "fields": {
+            "name": "lartiste"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "680",
+        "fields": {
+            "name": "lartiste by spring step"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "681",
+        "fields": {
+            "name": "latigo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "682",
+        "fields": {
+            "name": "lauren by raph lauren"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "683",
+        "fields": {
+            "name": "lauren lorraine"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "684",
+        "fields": {
+            "name": "lauren raph lauren"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "685",
+        "fields": {
+            "name": "le chameau"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "686",
+        "fields": {
+            "name": "le suit"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "687",
+        "fields": {
+            "name": "leg avenue"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "688",
+        "fields": {
+            "name": "legendary tais"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "689",
+        "fields": {
+            "name": "leisureand"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "690",
+        "fields": {
+            "name": "levis"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "691",
+        "fields": {
+            "name": "lfl"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "692",
+        "fields": {
+            "name": "liberty black"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "693",
+        "fields": {
+            "name": "life is good"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "694",
+        "fields": {
+            "name": "life stride"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "695",
+        "fields": {
+            "name": "lifestride"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "696",
+        "fields": {
+            "name": "lia suregrip"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "697",
+        "fields": {
+            "name": "liliana"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "698",
+        "fields": {
+            "name": "liian rose"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "699",
+        "fields": {
+            "name": "liz caiborne"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "700",
+        "fields": {
+            "name": "ll"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "701",
+        "fields": {
+            "name": "loeffer randa"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "702",
+        "fields": {
+            "name": "logo by lori godstein"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "703",
+        "fields": {
+            "name": "loa cruz"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "704",
+        "fields": {
+            "name": "loa sabbia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "705",
+        "fields": {
+            "name": "louise et cie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "706",
+        "fields": {
+            "name": "lowa"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "707",
+        "fields": {
+            "name": "lucchese"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "708",
+        "fields": {
+            "name": "lucky"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "709",
+        "fields": {
+            "name": "lucky brand"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "710",
+        "fields": {
+            "name": "lugz"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "711",
+        "fields": {
+            "name": "luichiny"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "712",
+        "fields": {
+            "name": "luo luo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "713",
+        "fields": {
+            "name": "luoluo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "714",
+        "fields": {
+            "name": "luxury divas"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "715",
+        "fields": {
+            "name": "luxury rebe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "716",
+        "fields": {
+            "name": "m\u0026f western"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "717",
+        "fields": {
+            "name": "m.f."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "718",
+        "fields": {
+            "name": "m.g."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "719",
+        "fields": {
+            "name": "machi"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "720",
+        "fields": {
+            "name": "madden gir"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "721",
+        "fields": {
+            "name": "madeine"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "722",
+        "fields": {
+            "name": "madeine gir"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "723",
+        "fields": {
+            "name": "madison harding"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "724",
+        "fields": {
+            "name": "magdesians"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "725",
+        "fields": {
+            "name": "makers shoes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "726",
+        "fields": {
+            "name": "malone souliers"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "727",
+        "fields": {
+            "name": "manitobah"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "728",
+        "fields": {
+            "name": "manoo bahnik"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "729",
+        "fields": {
+            "name": "marc by marc jacobs"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "730",
+        "fields": {
+            "name": "marc fisher"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "731",
+        "fields": {
+            "name": "marc fisher ltd"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "732",
+        "fields": {
+            "name": "marc joseph"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "733",
+        "fields": {
+            "name": "marchez vous"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "734",
+        "fields": {
+            "name": "maria sharapovcoe haan"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "735",
+        "fields": {
+            "name": "mark and maddux"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "736",
+        "fields": {
+            "name": "mark lemp by waking crades"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "737",
+        "fields": {
+            "name": "marni"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "738",
+        "fields": {
+            "name": "martino"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "739",
+        "fields": {
+            "name": "mary pepper"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "740",
+        "fields": {
+            "name": "materia gir"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "741",
+        "fields": {
+            "name": "matiko"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "742",
+        "fields": {
+            "name": "matt bernson"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "743",
+        "fields": {
+            "name": "max mara"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "744",
+        "fields": {
+            "name": "mbt"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "745",
+        "fields": {
+            "name": "mcm"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "746",
+        "fields": {
+            "name": "mcrae industria"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "747",
+        "fields": {
+            "name": "me too"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "748",
+        "fields": {
+            "name": "medine"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "749",
+        "fields": {
+            "name": "meampus"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "750",
+        "fields": {
+            "name": "meissa"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "751",
+        "fields": {
+            "name": "mellow walk"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "752",
+        "fields": {
+            "name": "menbur"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "753",
+        "fields": {
+            "name": "mephisto"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "754",
+        "fields": {
+            "name": "mercanti fiorentini"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "755",
+        "fields": {
+            "name": "merre"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "756",
+        "fields": {
+            "name": "metaphor"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "757",
+        "fields": {
+            "name": "mezzo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "758",
+        "fields": {
+            "name": "mi.im"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "759",
+        "fields": {
+            "name": "mia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "760",
+        "fields": {
+            "name": "mia gir"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "761",
+        "fields": {
+            "name": "mia heritage"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "762",
+        "fields": {
+            "name": "mia limited edition"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "763",
+        "fields": {
+            "name": "micahe kors"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "764",
+        "fields": {
+            "name": "michae antonio"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "765",
+        "fields": {
+            "name": "michae antonioreg"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "766",
+        "fields": {
+            "name": "michae kors"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "767",
+        "fields": {
+            "name": "michael michae kors"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "768",
+        "fields": {
+            "name": "michae michae kors"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "769",
+        "fields": {
+            "name": "miista"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "770",
+        "fields": {
+            "name": "mies kimba"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "771",
+        "fields": {
+            "name": "minibasics"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "772",
+        "fields": {
+            "name": "minnetonka"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "773",
+        "fields": {
+            "name": "minnie mouse"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "774",
+        "fields": {
+            "name": "mirage pet products"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "775",
+        "fields": {
+            "name": "mirandmiranda lambert"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "776",
+        "fields": {
+            "name": "missoni"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "777",
+        "fields": {
+            "name": "miu miu"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "778",
+        "fields": {
+            "name": "mix no 6"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "779",
+        "fields": {
+            "name": "miz mooz"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "780",
+        "fields": {
+            "name": "mizuno"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "781",
+        "fields": {
+            "name": "mjus"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "782",
+        "fields": {
+            "name": "mlb"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "783",
+        "fields": {
+            "name": "mo mo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "784",
+        "fields": {
+            "name": "mobis by mephisto"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "785",
+        "fields": {
+            "name": "moda essentias"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "786",
+        "fields": {
+            "name": "moda refex"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "787",
+        "fields": {
+            "name": "modern rush"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "788",
+        "fields": {
+            "name": "modit"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "789",
+        "fields": {
+            "name": "modzori"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "790",
+        "fields": {
+            "name": "mojo moxy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "791",
+        "fields": {
+            "name": "moksha imports"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "792",
+        "fields": {
+            "name": "montana"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "793",
+        "fields": {
+            "name": "montrai"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "794",
+        "fields": {
+            "name": "moogyz"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "795",
+        "fields": {
+            "name": "mootsies tootsies"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "796",
+        "fields": {
+            "name": "morris"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "797",
+        "fields": {
+            "name": "morris costumes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "798",
+        "fields": {
+            "name": "moschino"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "799",
+        "fields": {
+            "name": "mossimo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "800",
+        "fields": {
+            "name": "mossy oak"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "801",
+        "fields": {
+            "name": "mountrek"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "802",
+        "fields": {
+            "name": "mozo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "803",
+        "fields": {
+            "name": "msmushroom"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "804",
+        "fields": {
+            "name": "mtng orignas"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "805",
+        "fields": {
+            "name": "muck boot"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "806",
+        "fields": {
+            "name": "mudd"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "807",
+        "fields": {
+            "name": "muk luks"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "808",
+        "fields": {
+            "name": "muk luks a la mode"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "809",
+        "fields": {
+            "name": "muk luks174"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "810",
+        "fields": {
+            "name": "munro"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "811",
+        "fields": {
+            "name": "munro american"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "812",
+        "fields": {
+            "name": "n.y.l.a."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "813",
+        "fields": {
+            "name": "naot"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "814",
+        "fields": {
+            "name": "naot footwear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "815",
+        "fields": {
+            "name": "native"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "816",
+        "fields": {
+            "name": "natura sou"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "817",
+        "fields": {
+            "name": "natura word"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "818",
+        "fields": {
+            "name": "naturaizer"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "819",
+        "fields": {
+            "name": "naturalsoul by naturalizer"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "820",
+        "fields": {
+            "name": "nature breeze"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "821",
+        "fields": {
+            "name": "naughty monkey"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "822",
+        "fields": {
+            "name": "nautica"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "823",
+        "fields": {
+            "name": "nautius safety footwear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "824",
+        "fields": {
+            "name": "naya"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "825",
+        "fields": {
+            "name": "nbsp"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "826",
+        "fields": {
+            "name": "ncaa"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "827",
+        "fields": {
+            "name": "neosport"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "828",
+        "fields": {
+            "name": "baance"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "829",
+        "fields": {
+            "name": "balance"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "830",
+        "fields": {
+            "name": "directions"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "831",
+        "fields": {
+            "name": "titude"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "832",
+        "fields": {
+            "name": "ttitude"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "833",
+        "fields": {
+            "name": "nfl"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "834",
+        "fields": {
+            "name": "nichoas kirkwood"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "835",
+        "fields": {
+            "name": "nicoe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "836",
+        "fields": {
+            "name": "nike"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "837",
+        "fields": {
+            "name": "nina"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "838",
+        "fields": {
+            "name": "nina originas"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "839",
+        "fields": {
+            "name": "nine west"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "840",
+        "fields": {
+            "name": "nine west vintage america coection"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "841",
+        "fields": {
+            "name": "no map"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "842",
+        "fields": {
+            "name": "no rues"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "843",
+        "fields": {
+            "name": "nocona boots"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "844",
+        "fields": {
+            "name": "nomad"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "845",
+        "fields": {
+            "name": "non-branded"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "846",
+        "fields": {
+            "name": "norm thompson"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "847",
+        "fields": {
+            "name": "northside"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "848",
+        "fields": {
+            "name": "not appicabe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "849",
+        "fields": {
+            "name": "not rated"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "850",
+        "fields": {
+            "name": "notfound"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "851",
+        "fields": {
+            "name": "novica"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "852",
+        "fields": {
+            "name": "nufoot"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "853",
+        "fields": {
+            "name": "nufoot���"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "854",
+        "fields": {
+            "name": "nurse mates"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "855",
+        "fields": {
+            "name": "nyvip"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "856",
+        "fields": {
+            "name": "oboz"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "857",
+        "fields": {
+            "name": "oh!"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "858",
+        "fields": {
+            "name": "oka bee"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "859",
+        "fields": {
+            "name": "okabashi"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "860",
+        "fields": {
+            "name": "od friend"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "861",
+        "fields": {
+            "name": "od gringo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "862",
+        "fields": {
+            "name": "old navy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "863",
+        "fields": {
+            "name": "oivia mier"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "864",
+        "fields": {
+            "name": "oukai"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "865",
+        "fields": {
+            "name": "om"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "866",
+        "fields": {
+            "name": "onea"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "867",
+        "fields": {
+            "name": "onguard"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "868",
+        "fields": {
+            "name": "onitsuka tiger"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "869",
+        "fields": {
+            "name": "onycherry"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "870",
+        "fields": {
+            "name": "oofos"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "871",
+        "fields": {
+            "name": "op"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "872",
+        "fields": {
+            "name": "opening ceremony"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "873",
+        "fields": {
+            "name": "oregon mudders"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "874",
+        "fields": {
+            "name": "orimar"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "875",
+        "fields": {
+            "name": "orthahee"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "876",
+        "fields": {
+            "name": "orthofeet"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "877",
+        "fields": {
+            "name": "otbt"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "878",
+        "fields": {
+            "name": "outaw"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "879",
+        "fields": {
+            "name": "oxu"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "880",
+        "fields": {
+            "name": "ozark trai"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "881",
+        "fields": {
+            "name": "p\u0026w york"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "882",
+        "fields": {
+            "name": "pacific trail"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "883",
+        "fields": {
+            "name": "pajar"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "884",
+        "fields": {
+            "name": "pajar174"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "885",
+        "fields": {
+            "name": "papiio"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "886",
+        "fields": {
+            "name": "papillio"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "887",
+        "fields": {
+            "name": "paprika"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "888",
+        "fields": {
+            "name": "parents choice"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "889",
+        "fields": {
+            "name": "paris hiton"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "890",
+        "fields": {
+            "name": "pas de rouge"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "891",
+        "fields": {
+            "name": "patagonia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "892",
+        "fields": {
+            "name": "patricia green"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "893",
+        "fields": {
+            "name": "patrizia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "894",
+        "fields": {
+            "name": "patrizispring step"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "895",
+        "fields": {
+            "name": "patrizia pepe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "896",
+        "fields": {
+            "name": "patterson medica"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "897",
+        "fields": {
+            "name": "pau andrew"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "898",
+        "fields": {
+            "name": "pau green"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "899",
+        "fields": {
+            "name": "pazzo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "900",
+        "fields": {
+            "name": "pear izumi"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "901",
+        "fields": {
+            "name": "pedi couture"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "902",
+        "fields": {
+            "name": "pee moda"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "903",
+        "fields": {
+            "name": "penny loves kenny"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "904",
+        "fields": {
+            "name": "persona identity"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "905",
+        "fields": {
+            "name": "pikoinos"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "906",
+        "fields": {
+            "name": "piow paws"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "907",
+        "fields": {
+            "name": "pin up"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "908",
+        "fields": {
+            "name": "\u0026 pepper"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "909",
+        "fields": {
+            "name": "paradox london"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "910",
+        "fields": {
+            "name": "pinup couture"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "911",
+        "fields": {
+            "name": "peaser"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "912",
+        "fields": {
+            "name": "pleaser"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "913",
+        "fields": {
+            "name": "peaser shoes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "914",
+        "fields": {
+            "name": "peaser usa inc."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "915",
+        "fields": {
+            "name": "peaserusa"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "916",
+        "fields": {
+            "name": "puie puie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "917",
+        "fields": {
+            "name": "poetic licence"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "918",
+        "fields": {
+            "name": "pokemon"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "919",
+        "fields": {
+            "name": "poo raph lauren"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "920",
+        "fields": {
+            "name": "portand boot company"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "921",
+        "fields": {
+            "name": "posey"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "922",
+        "fields": {
+            "name": "posh weies"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "923",
+        "fields": {
+            "name": "pour la victoire"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "924",
+        "fields": {
+            "name": "prada"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "925",
+        "fields": {
+            "name": "praerie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "926",
+        "fields": {
+            "name": "primigi"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "927",
+        "fields": {
+            "name": "prince"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "928",
+        "fields": {
+            "name": "prine business enterprises"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "929",
+        "fields": {
+            "name": "prine pastics"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "930",
+        "fields": {
+            "name": "pro line"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "931",
+        "fields": {
+            "name": "propet"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "932",
+        "fields": {
+            "name": "propper"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "933",
+        "fields": {
+            "name": "proxy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "934",
+        "fields": {
+            "name": "puma"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "935",
+        "fields": {
+            "name": "qupid"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "936",
+        "fields": {
+            "name": "r.b..s."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "937",
+        "fields": {
+            "name": "rache"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "938",
+        "fields": {
+            "name": "rache rache roy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "939",
+        "fields": {
+            "name": "rache roy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "940",
+        "fields": {
+            "name": "rache zoe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "941",
+        "fields": {
+            "name": "rafters"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "942",
+        "fields": {
+            "name": "rag \u0026 bone"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "943",
+        "fields": {
+            "name": "rainbow"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "944",
+        "fields": {
+            "name": "rainbow sandalls"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "945",
+        "fields": {
+            "name": "raph lauren"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "946",
+        "fields": {
+            "name": "ralph lauren"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "947",
+        "fields": {
+            "name": "raph lauren denim suppy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "948",
+        "fields": {
+            "name": "ramon tenza"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "949",
+        "fields": {
+            "name": "rampage"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "950",
+        "fields": {
+            "name": "ranger"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "951",
+        "fields": {
+            "name": "reatree"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "952",
+        "fields": {
+            "name": "reba"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "953",
+        "fields": {
+            "name": "rebecca minkoff"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "954",
+        "fields": {
+            "name": "rebes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "955",
+        "fields": {
+            "name": "red circe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "956",
+        "fields": {
+            "name": "red vaentino"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "957",
+        "fields": {
+            "name": "reebok"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "958",
+        "fields": {
+            "name": "reef"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "959",
+        "fields": {
+            "name": "refresh"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "960",
+        "fields": {
+            "name": "reiker"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "961",
+        "fields": {
+            "name": "remonte"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "962",
+        "fields": {
+            "name": "reneeze"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "963",
+        "fields": {
+            "name": "report"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "964",
+        "fields": {
+            "name": "report signature"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "965",
+        "fields": {
+            "name": "re-soe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "966",
+        "fields": {
+            "name": "restricted"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "967",
+        "fields": {
+            "name": "riato"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "968",
+        "fields": {
+            "name": "rider"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "969",
+        "fields": {
+            "name": "rieker"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "970",
+        "fields": {
+            "name": "rieker-antistress"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "971",
+        "fields": {
+            "name": "riverberry"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "972",
+        "fields": {
+            "name": "rjs fuzzies"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "973",
+        "fields": {
+            "name": "robert cergerie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "974",
+        "fields": {
+            "name": "roces"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "975",
+        "fields": {
+            "name": "rock \u0026 candy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "976",
+        "fields": {
+            "name": "rocket dog"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "977",
+        "fields": {
+            "name": "rocket dog brands llc"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "978",
+        "fields": {
+            "name": "rockport"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "979",
+        "fields": {
+            "name": "rocsoc"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "980",
+        "fields": {
+            "name": "romantic soes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "981",
+        "fields": {
+            "name": "roper"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "982",
+        "fields": {
+            "name": "ros hommerson"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "983",
+        "fields": {
+            "name": "rose petas by waking crades"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "984",
+        "fields": {
+            "name": "route 66"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "985",
+        "fields": {
+            "name": "roxy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "986",
+        "fields": {
+            "name": "roya eastics"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "987",
+        "fields": {
+            "name": "rsvp"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "988",
+        "fields": {
+            "name": "rubies costumes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "989",
+        "fields": {
+            "name": "rupert sanderson"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "990",
+        "fields": {
+            "name": "ryka"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "991",
+        "fields": {
+            "name": "s.c."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "992",
+        "fields": {
+            "name": "sfft"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "993",
+        "fields": {
+            "name": "saachi"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "994",
+        "fields": {
+            "name": "safety gear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "995",
+        "fields": {
+            "name": "saint laurent"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "996",
+        "fields": {
+            "name": "savatore ferragamo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "997",
+        "fields": {
+            "name": "sam edeman"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "998",
+        "fields": {
+            "name": "sandal king"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "999",
+        "fields": {
+            "name": "sanita"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1000",
+        "fields": {
+            "name": "sanita cogs"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1001",
+        "fields": {
+            "name": "sansha"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1002",
+        "fields": {
+            "name": "santoni"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1003",
+        "fields": {
+            "name": "sanuk"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1004",
+        "fields": {
+            "name": "sarto by franco sarto"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1005",
+        "fields": {
+            "name": "saucony"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1006",
+        "fields": {
+            "name": "sbicca"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1007",
+        "fields": {
+            "name": "scarpa"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1008",
+        "fields": {
+            "name": "schutz"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1009",
+        "fields": {
+            "name": "scott"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1010",
+        "fields": {
+            "name": "seavees"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1011",
+        "fields": {
+            "name": "sebago"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1012",
+        "fields": {
+            "name": "sebastian miano"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1013",
+        "fields": {
+            "name": "secure��"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1014",
+        "fields": {
+            "name": "see by choe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1015",
+        "fields": {
+            "name": "servus"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1016",
+        "fields": {
+            "name": "sesame street"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1017",
+        "fields": {
+            "name": "sesto meucci"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1018",
+        "fields": {
+            "name": "seycheels"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1019",
+        "fields": {
+            "name": "shellys london"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1020",
+        "fields": {
+            "name": "sheys london"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1021",
+        "fields": {
+            "name": "shesoe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1022",
+        "fields": {
+            "name": "shimano"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1023",
+        "fields": {
+            "name": "shoes for crews"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1024",
+        "fields": {
+            "name": "shoes of prey"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1025",
+        "fields": {
+            "name": "shoes of soul"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1026",
+        "fields": {
+            "name": "shoes8teen"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1027",
+        "fields": {
+            "name": "shoevibe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1028",
+        "fields": {
+            "name": "sidekick"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1029",
+        "fields": {
+            "name": "siver liy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1030",
+        "fields": {
+            "name": "siverts"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1031",
+        "fields": {
+            "name": "simone rocha"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1032",
+        "fields": {
+            "name": "simpe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1033",
+        "fields": {
+            "name": "simpicity"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1034",
+        "fields": {
+            "name": "skadoo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1035",
+        "fields": {
+            "name": "skechers"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1036",
+        "fields": {
+            "name": "skechers usa"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1037",
+        "fields": {
+            "name": "skidders"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1038",
+        "fields": {
+            "name": "slm"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1039",
+        "fields": {
+            "name": "soggers"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1040",
+        "fields": {
+            "name": "soosh"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1041",
+        "fields": {
+            "name": "sm"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1042",
+        "fields": {
+            "name": "sm york"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1043",
+        "fields": {
+            "name": "so for her"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1044",
+        "fields": {
+            "name": "soda"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1045",
+        "fields": {
+            "name": "sofft"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1046",
+        "fields": {
+            "name": "soft science"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1047",
+        "fields": {
+            "name": "soft stye"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1048",
+        "fields": {
+            "name": "soft stye by hush puppies"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1049",
+        "fields": {
+            "name": "soft-fit"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1050",
+        "fields": {
+            "name": "softspots"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1051",
+        "fields": {
+            "name": "softwak"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1052",
+        "fields": {
+            "name": "soe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1053",
+        "fields": {
+            "name": "soe society"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1054",
+        "fields": {
+            "name": "soesenseabiity"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1055",
+        "fields": {
+            "name": "soudos"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1056",
+        "fields": {
+            "name": "sondoongmart"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1057",
+        "fields": {
+            "name": "sophia webster"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1058",
+        "fields": {
+            "name": "sorel"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1059",
+        "fields": {
+            "name": "sore"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1060",
+        "fields": {
+            "name": "speed limit 98"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1061",
+        "fields": {
+            "name": "speedo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1062",
+        "fields": {
+            "name": "spenco"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1063",
+        "fields": {
+            "name": "sperry"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1064",
+        "fields": {
+            "name": "sperry top sider"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1065",
+        "fields": {
+            "name": "sperry top-sider"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1066",
+        "fields": {
+            "name": "spira"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1067",
+        "fields": {
+            "name": "spirit moda"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1068",
+        "fields": {
+            "name": "spendid"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1069",
+        "fields": {
+            "name": "sporto"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1070",
+        "fields": {
+            "name": "spring"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1071",
+        "fields": {
+            "name": "spring step"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1072",
+        "fields": {
+            "name": "staheekum"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1073",
+        "fields": {
+            "name": "static fashion"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1074",
+        "fields": {
+            "name": "static footwear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1075",
+        "fields": {
+            "name": "stee "
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1076",
+        "fields": {
+            "name": "stea mccartney"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1077",
+        "fields": {
+            "name": "stetson"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1078",
+        "fields": {
+            "name": "steve madden"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1079",
+        "fields": {
+            "name": "steven by steve madden"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1080",
+        "fields": {
+            "name": "steven steve madden"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1081",
+        "fields": {
+            "name": "stokton"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1082",
+        "fields": {
+            "name": "storm"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1083",
+        "fields": {
+            "name": "strand import"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1084",
+        "fields": {
+            "name": "stuart weitzman"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1085",
+        "fields": {
+            "name": "studswar"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1086",
+        "fields": {
+            "name": "stye \u0026 co"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1087",
+        "fields": {
+            "name": "stye \u0026 co."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1088",
+        "fields": {
+            "name": "sugar"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1089",
+        "fields": {
+            "name": "summit"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1090",
+        "fields": {
+            "name": "summit fashions"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1091",
+        "fields": {
+            "name": "summitfashions"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1092",
+        "fields": {
+            "name": "sunny feet"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1093",
+        "fields": {
+            "name": "sunrolan"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1094",
+        "fields": {
+            "name": "sunvie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1095",
+        "fields": {
+            "name": "superfit"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1096",
+        "fields": {
+            "name": "superga"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1097",
+        "fields": {
+            "name": "sweet baerina"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1098",
+        "fields": {
+            "name": "t k"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1099",
+        "fields": {
+            "name": "t.s."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1100",
+        "fields": {
+            "name": "tactica 5.11"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1101",
+        "fields": {
+            "name": "tahari"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1102",
+        "fields": {
+            "name": "tabots"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1103",
+        "fields": {
+            "name": "tamara meon"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1104",
+        "fields": {
+            "name": "tamarac"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1105",
+        "fields": {
+            "name": "tamaris"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1106",
+        "fields": {
+            "name": "taos"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1107",
+        "fields": {
+            "name": "taryn rose"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1108",
+        "fields": {
+            "name": "team fortress"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1109",
+        "fields": {
+            "name": "tecnica"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1110",
+        "fields": {
+            "name": "tecs"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1111",
+        "fields": {
+            "name": "ted baker london"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1112",
+        "fields": {
+            "name": "teic"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1113",
+        "fields": {
+            "name": "tender tootsies"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1114",
+        "fields": {
+            "name": "tenth frame"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1115",
+        "fields": {
+            "name": "tesh"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1116",
+        "fields": {
+            "name": "tesori"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1117",
+        "fields": {
+            "name": "teva"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1118",
+        "fields": {
+            "name": "thaia sodi"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1119",
+        "fields": {
+            "name": "the fexx"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1120",
+        "fields": {
+            "name": "the flexx"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1121",
+        "fields": {
+            "name": "the highest hee"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1122",
+        "fields": {
+            "name": "the north face"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1123",
+        "fields": {
+            "name": "the origina muck boot company"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1124",
+        "fields": {
+            "name": "the petting zoo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1125",
+        "fields": {
+            "name": "the sak"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1126",
+        "fields": {
+            "name": "the waking crade company"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1127",
+        "fields": {
+            "name": "theatricals dance footwear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1128",
+        "fields": {
+            "name": "themogan"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1129",
+        "fields": {
+            "name": "thinkgeek"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1130",
+        "fields": {
+            "name": "thirty-one"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1131",
+        "fields": {
+            "name": "thorogood"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1132",
+        "fields": {
+            "name": "tiara"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1133",
+        "fields": {
+            "name": "tidewater"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1134",
+        "fields": {
+            "name": "timberand"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1135",
+        "fields": {
+            "name": "timberand earthkeepers"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1136",
+        "fields": {
+            "name": "timberand pro"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1137",
+        "fields": {
+            "name": "timeess toys"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1138",
+        "fields": {
+            "name": "tkees"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1139",
+        "fields": {
+            "name": "tods"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1140",
+        "fields": {
+            "name": "toe warmers"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1141",
+        "fields": {
+            "name": "toi et moi"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1142",
+        "fields": {
+            "name": "tommy bahama"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1143",
+        "fields": {
+            "name": "tommy hifiger"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1144",
+        "fields": {
+            "name": "toms"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1145",
+        "fields": {
+            "name": "toms shoes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1146",
+        "fields": {
+            "name": "tony lama"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1147",
+        "fields": {
+            "name": "tony lama boot co."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1148",
+        "fields": {
+            "name": "top moda"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1149",
+        "fields": {
+            "name": "topshop"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1150",
+        "fields": {
+            "name": "toptie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1151",
+        "fields": {
+            "name": "tory burch"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1152",
+        "fields": {
+            "name": "totes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1153",
+        "fields": {
+            "name": "totes isotoner"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1154",
+        "fields": {
+            "name": "touch ups"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1155",
+        "fields": {
+            "name": "touch ups by benjamin wak"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1156",
+        "fields": {
+            "name": "touchstone"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1157",
+        "fields": {
+            "name": "townforst"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1158",
+        "fields": {
+            "name": "transpack"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1159",
+        "fields": {
+            "name": "trask"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1160",
+        "fields": {
+            "name": "tred mates"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1161",
+        "fields": {
+            "name": "tredsafe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1162",
+        "fields": {
+            "name": "tretorn"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1163",
+        "fields": {
+            "name": "trina turk"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1164",
+        "fields": {
+            "name": "troentorp bastad cogs"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1165",
+        "fields": {
+            "name": "tropica escape"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1166",
+        "fields": {
+            "name": "trotter"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1167",
+        "fields": {
+            "name": "trotters"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1168",
+        "fields": {
+            "name": "true inkswear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1169",
+        "fields": {
+            "name": "tsubo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1170",
+        "fields": {
+            "name": "tundra"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1171",
+        "fields": {
+            "name": "twisted"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1172",
+        "fields": {
+            "name": "twisted x"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1173",
+        "fields": {
+            "name": "two lips"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1174",
+        "fields": {
+            "name": "two lips brand"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1175",
+        "fields": {
+            "name": "u.s. poo assn."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1176",
+        "fields": {
+            "name": "u.s.a."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1177",
+        "fields": {
+            "name": "u-beauty"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1178",
+        "fields": {
+            "name": "ugg"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1179",
+        "fields": {
+            "name": "ugg austraia"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1180",
+        "fields": {
+            "name": "unbranded"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1181",
+        "fields": {
+            "name": "unbrandedgeneric"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1182",
+        "fields": {
+            "name": "under armour"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1183",
+        "fields": {
+            "name": "unionbay"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1184",
+        "fields": {
+            "name": "unique bargains"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1185",
+        "fields": {
+            "name": "uniques shop"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1186",
+        "fields": {
+            "name": "unisa"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1187",
+        "fields": {
+            "name": "united nude"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1188",
+        "fields": {
+            "name": "universa direct brands"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1189",
+        "fields": {
+            "name": "unisted"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1190",
+        "fields": {
+            "name": "unisted kenneth coe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1191",
+        "fields": {
+            "name": "usa dawgs"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1192",
+        "fields": {
+            "name": "vaentino"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1193",
+        "fields": {
+            "name": "vaentino noir"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1194",
+        "fields": {
+            "name": "value brand"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1195",
+        "fields": {
+            "name": "vanei"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1196",
+        "fields": {
+            "name": "vaneli"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1197",
+        "fields": {
+            "name": "vans"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1198",
+        "fields": {
+            "name": "vasque"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1199",
+        "fields": {
+            "name": "vc signature"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1200",
+        "fields": {
+            "name": "venettini"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1201",
+        "fields": {
+            "name": "very fine"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1202",
+        "fields": {
+            "name": "very fine dance shoes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1203",
+        "fields": {
+            "name": "very voatie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1204",
+        "fields": {
+            "name": "vestiture"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1205",
+        "fields": {
+            "name": "via y"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1206",
+        "fields": {
+            "name": "via spiga"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1207",
+        "fields": {
+            "name": "vibram"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1208",
+        "fields": {
+            "name": "vicenzo leather"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1209",
+        "fields": {
+            "name": "victoria"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1210",
+        "fields": {
+            "name": "victoria k."
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1211",
+        "fields": {
+            "name": "viking"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1212",
+        "fields": {
+            "name": "vince"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1213",
+        "fields": {
+            "name": "vince camuto"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1214",
+        "fields": {
+            "name": "vionic"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1215",
+        "fields": {
+            "name": "vionic by orthahee"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1216",
+        "fields": {
+            "name": "vionic with orthahee technoogy"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1217",
+        "fields": {
+            "name": "vision street wear"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1218",
+        "fields": {
+            "name": "vivienne westwood"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1219",
+        "fields": {
+            "name": "vivobarefoot"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1220",
+        "fields": {
+            "name": "voatie"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1221",
+        "fields": {
+            "name": "vocom"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1222",
+        "fields": {
+            "name": "voey"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1223",
+        "fields": {
+            "name": "vybe"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1224",
+        "fields": {
+            "name": "waking crades"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1225",
+        "fields": {
+            "name": "walterdrake"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1226",
+        "fields": {
+            "name": "wanderust"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1227",
+        "fields": {
+            "name": "wanted"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1228",
+        "fields": {
+            "name": "wear ever"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1229",
+        "fields": {
+            "name": "western chief"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1230",
+        "fields": {
+            "name": "whats what by aerosoes"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1231",
+        "fields": {
+            "name": "mountain"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1232",
+        "fields": {
+            "name": "wid diva"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1233",
+        "fields": {
+            "name": "wid diva lounge"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1234",
+        "fields": {
+            "name": "wid pair"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1235",
+        "fields": {
+            "name": "wiowbee"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1236",
+        "fields": {
+            "name": "wishpets"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1237",
+        "fields": {
+            "name": "woky"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1238",
+        "fields": {
+            "name": "woverine"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1239",
+        "fields": {
+            "name": "wonder cothing"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1240",
+        "fields": {
+            "name": "woorich"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1241",
+        "fields": {
+            "name": "xoxo"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1242",
+        "fields": {
+            "name": "xtratuf"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1243",
+        "fields": {
+            "name": "yeow box"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1244",
+        "fields": {
+            "name": "yiedongreen"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1245",
+        "fields": {
+            "name": "yoki"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1246",
+        "fields": {
+            "name": "yosi samra"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1247",
+        "fields": {
+            "name": "yuu"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1248",
+        "fields": {
+            "name": "yves saint laurent"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1249",
+        "fields": {
+            "name": "zee aexis"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1250",
+        "fields": {
+            "name": "zee line"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1251",
+        "fields": {
+            "name": "zigi soho"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1252",
+        "fields": {
+            "name": "zoot"
+        }
+    },
+    {
+        "model": "product.brand",
+        "id": "1253",
+        "fields": {
+            "name": "zumba"
+        }
+    }
+]

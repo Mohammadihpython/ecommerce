@@ -1,0 +1,17 @@
+[{
+        "model": "product.productattribute",
+        "id": "1",
+        "fields": {
+            "name": "woman-shoe-size",
+            "description": "men shoe size"
+        }
+    },
+{
+        "model": "product.productattribute",
+        "id": "2",
+        "fields": {
+            "name": "color",
+            "description": "color"
+        }
+    }
+]
